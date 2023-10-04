@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="made by Sreekanth S, programmer, coder, job hunt, web developer">
+    <meta name="description" content="This is the official Personal website of Sreekanth S. Thanks for visiting.">
+    <meta name="author" content="Sreekanth S">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Status Bar Style (see Supported Meta Tags below for available values) -->
+    <!-- Has no effect unless you have the previous meta tag -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">]
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Sreekanth S | Personal Website</title>
+</head>
+<body>
+    <main>
+        <div id="nav-gap">
+            
+        </div>
+        
+        <!-- == The navbar begins == -->
+        <nav>       
+            <div class="logo">
+                <h4>SREEKANTH S</h4>
+            </div>
+        
+            <ul id="nav-link-id" class="qbc">
+                <li><a href="#about"><i class="fa-solid fa-user"></i> ABOUT ME</a></li>
+                <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i> EDUCATION</a></li>
+                <li><a href="#skills"><i class="fa-solid fa-laptop-code"></i> MY SKILLS</a></li>
+                <li><a href="#portfolio"><i class="fa-solid fa-code-compare"></i> PROJECTS</a></li>
+                <li><a href="https://sreekanths-24.github.io/my-blogs/" target="_blank"><i class="fa-solid fa-blog"></i> MY BLOGS</a></li>
+                <li><a href="#contact-me"><i class="fa-solid fa-phone"></i> CONTACT ME</a></li>
+            </ul>
+            
+            <i id="togglenav" class="fa-solid fa-bars"></i>
+
+            <div class="socials-nav">
+                <a href="mailto:sreekanthsanthosh17@gmail.com" target="_blank" rel="noopener noreferrer" class="cards2"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.twitter.com/_Sreekanth_S_/" target="_blank" rel="noopener noreferrer" class="cards2"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/sreekanth-s-663418232" target="_blank" rel="noopener noreferrer" class="cards2"><i class="fa-brands fa-linkedin"></i></a> 
+                <a href="https://github.com/sreekanths-24" target="_blank" rel="noopener noreferrer" class="cards2"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.youtube.com/@IAmSreekanthS" target="_blank" rel="noopener noreferrer" class="cards2"><i class="fa-brands fa-youtube"></i></a>            </div>
+        </nav>
+    
+        <section class="about-me" id="about">
+    
+        </section>
+    </main>
+
+    <script src="scripts/main.js"></script>
+    <script>
+        const icon = document.getElementById('togglenav');
+     const menu = document.getElementById('nav-link-id');
+
+     icon.onclick = function(){
+         menu.classList.toggle('nav-active');
+     }
+
+     document.onclick = function(clickEvent){
+         if(clickEvent.target.id !== 'nav-link-id' && clickEvent.target.id !== 'togglenav'){
+             menu.classList.remove('nav-active');    
+         }
+     }
+ </script>
+</body>
+</html>
