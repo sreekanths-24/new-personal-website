@@ -29,7 +29,6 @@ body{
 
     #nav-gap{
         background-color: #eeeeee;
-        letter-spacing: 1px;
         display: none;
     }
 }
@@ -224,23 +223,20 @@ body{
 .landing-page{
     background-color: #111111;
     min-height: fit-content;
-    height: 87vh;
+    height: 90vh;
     max-height: 1000px;
-    padding: 2em;
+    padding: 2em 1em;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
 }
 
 .landing-page h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #00adb5;
     font-weight: bold;
 
-}
-.heading-div{
-    display: block;
 }
 #know-more-btn{
     padding: 0.5em 1em;
@@ -261,6 +257,15 @@ body{
         margin-top: -2.4vh;
     }
 }
+.separator{
+    width: 0;
+    height: 0;
+    border-radius: 100vw solid transparent;
+    border-bottom: 13.9vw solid #00adb5;
+    margin-top: -13.9vw;
+}
+
+
 /*==================About section======================*/
 
 .about-me{
