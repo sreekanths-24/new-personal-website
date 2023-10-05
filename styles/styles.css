@@ -103,8 +103,7 @@ body{
     }
     
 }
-      
-@media (orientation: landscape) {
+       @media screen and (max-width: 330px) {
     nav .logo,nav i{
         font-size: 1.2rem;
     }
@@ -116,7 +115,7 @@ body{
         border-top-right-radius: 50px;
     }
 }
-@media screen and (min-width: 900px) {
+@media (orientation: landscape) {
     #nav-gap{
         display: none;
     }
