@@ -1,5 +1,5 @@
 *{
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Alegreya Sans SC', sans-serif;
     color: #8d8d8d;
 }
 a{
@@ -36,7 +36,7 @@ body{
 
 
 /*==================nav bar ======================*/
-@media (orientation: portrait) {
+@media screen and (min-width: 250px) and (max-width: 900px){    
     nav {
         background-color: #171717;
         border-bottom: 2px solid #393e46;
@@ -115,7 +115,7 @@ body{
         border-top-right-radius: 50px;
     }
 }
-@media (orientation: landscape) {
+@media screen and (min-width: 900px) {
     #nav-gap{
         display: none;
     }
