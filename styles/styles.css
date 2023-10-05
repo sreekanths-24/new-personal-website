@@ -1,5 +1,5 @@
 *{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     color: #8d8d8d;
 }
 a{
@@ -83,7 +83,7 @@ body{
     background-color: #171717;
     border: 2px solid #393e46;
     position: fixed;
-    bottom: 50%;
+    bottom: 1em;
     width: 70%;
     height: 60vh;
     min-height: fit-content;
