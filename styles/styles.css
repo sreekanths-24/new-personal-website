@@ -223,8 +223,14 @@ body{
 /*==================Landing page section======================*/
 .landing-page{
     background-color: #111111;
-    min-height: 100vh;
+    min-height: fit-content;
+    height: 87vh;
+    max-height: 1000px;
     padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .landing-page h1{
@@ -232,6 +238,23 @@ body{
     color: #00adb5;
     font-weight: bold;
 
+}
+.heading-div{
+    display: block;
+}
+#know-more-btn{
+    padding: 0.5em 1em;
+    font-size: 1.5rem;
+    color: #00adb5;
+    border:2px solid currentColor;
+    width: max-content;  
+}
+#know-more-btn:hover{
+    background-color: #00adb5;
+    color: #111111;
+    border: 2px solid #00adb5;
+    transition: all 0.5s;
+    font-weight: bold;
 }
 @media screen and (min-width: 900px) {
     .landing-page{
@@ -241,13 +264,12 @@ body{
 /*==================About section======================*/
 
 .about-me{
-    background-color: #111111;
-    height: 94vh;
+    min-height: fit-content;
+    height: 90vh;
+    max-height: 1000px;
+    padding: 2em;
 }
 
 @media screen and (min-width: 900px) {
-
-    .about-me{
-        height: 100vh;
-    }
+ 
 }
