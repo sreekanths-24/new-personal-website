@@ -12,8 +12,8 @@ body{
 
 /* Extra small devices (phones, 600px and down) */
 #nav-gap{
-    height: 5vh;
-    min-height: 30px;
+    height: 3vh;
+    min-height: 20px;
     max-height: 100px;
     background-color: #eeeeee;
     letter-spacing: 1px;
@@ -38,7 +38,7 @@ body{
 /*==================nav bar ======================*/
 @media screen and (min-width: 250px) and (max-width: 900px){    
     nav {
-        background-color: #171717;
+        background-color: #111111;
         border-bottom: 2px solid #393e46;
         display: flex;
         color: #eeeeee;
@@ -49,8 +49,8 @@ body{
         left: 0;
         right: 0;
         width: 100%;
-        min-height: 60px;
-        height: 6vh;
+        min-height: 40px;
+        height: 4vh;
         max-height: 100px;
         z-index: 1;
     }
@@ -64,6 +64,7 @@ body{
     nav .logo h4{
     font-size: 1.5rem;
     color: #eeeeee;
+    font-weight: bold;
     }
    /* 
     nav a {
@@ -79,14 +80,14 @@ body{
     }
     
     .nav-active {
-    background-color: #171717;
+    background-color: #111111;
     border: 2px solid #393e46;
     position: fixed;
     bottom: 1em;
-    width: 70%;
-    height: 60vh;
+    width: 60%;
+    height: 50vh;
     min-height: fit-content;
-    border-radius: 40px;
+    border-radius: 20px;
     list-style: none;
     display: flex;
     align-items: center;
@@ -122,10 +123,11 @@ body{
         position: fixed;
         top: 0;
         left: 0;
+        min-width: 100px;
         width: 18%;
         height: 100vh;
         border-right: 2px solid #393e46;
-        background-color: #171717;
+        background-color: #111111;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
@@ -162,13 +164,18 @@ body{
         color: #00adb5;
         transition: all 0.5s;
         border-radius: 10px;
+        font-weight: bold;
     }
     nav li a:hover i{
         color: #00adb5;
     }
     
+    nav .logo h4{
+        font-size: 1.5rem;
+        color: #eeeeee;
+        font-weight: bold;
+    }
     nav .logo{
-        font-size: 1.6rem;
         width: 100%;
         height: 15%;
         display: flex;
@@ -213,17 +220,34 @@ body{
 /*==================nav bar ends======================*/
 
 
+/*==================Landing page section======================*/
+.landing-page{
+    background-color: #111111;
+    min-height: 100vh;
+    padding: 2em;
+}
+
+.landing-page h1{
+    font-size: 3rem;
+    color: #00adb5;
+    font-weight: bold;
+
+}
+@media screen and (min-width: 900px) {
+    .landing-page{
+        margin-top: -2.4vh;
+    }
+}
 /*==================About section======================*/
 
 .about-me{
-    background-color: #171717;
+    background-color: #111111;
     height: 94vh;
 }
 
 @media screen and (min-width: 900px) {
 
     .about-me{
-        margin-top: -2.4vh;
         height: 100vh;
     }
 }
