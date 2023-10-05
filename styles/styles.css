@@ -1,5 +1,5 @@
 *{
-    font-family: 'Alegreya Sans SC', sans-serif;
+   font-family: 'Quicksand', sans-serif;
     color: #8d8d8d;
 }
 a{
@@ -42,7 +42,6 @@ body{
         border-bottom: 2px solid #393e46;
         display: flex;
         color: #eeeeee;
-        letter-spacing: 1px;
         align-items: center;
         justify-content: space-around;
         position: fixed;
@@ -63,13 +62,13 @@ body{
         font-size: 1.5rem;
     }
     nav .logo h4{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: #eeeeee;
     }
-    
+   /* 
     nav a {
     letter-spacing: 1px;
-    }
+    }*/
     
     nav ul {
     position: fixed;
