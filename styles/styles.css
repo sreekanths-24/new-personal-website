@@ -4,6 +4,7 @@
 }
 a{
     text-decoration: none;
+    color: #8d8d8d;
 }
 
 body{
@@ -160,6 +161,7 @@ body{
     }
 
     nav li a:hover{
+        font-size: 1.2rem;
         color: #00adb5;
         transition: all 0.5s;
         border-radius: 10px;
@@ -223,7 +225,7 @@ body{
 .landing-page{
     background-color: #111111;
     min-height: fit-content;
-    height: 90vh;
+    height: 100vh;
     max-height: 1000px;
     padding: 2em 1em;
     display: flex;
@@ -252,29 +254,99 @@ body{
     transition: all 0.5s;
     font-weight: bold;
 }
+.heading-div{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
 @media screen and (min-width: 900px) {
     .landing-page{
         margin-top: -2.4vh;
     }
+
 }
-.separator{
-    width: 0;
-    height: 0;
-    border-radius: 100vw solid transparent;
-    border-bottom: 13.9vw solid #00adb5;
-    margin-top: -13.9vw;
-}
+
 
 
 /*==================About section======================*/
 
 .about-me{
-    min-height: fit-content;
-    height: 90vh;
-    max-height: 1000px;
-    padding: 2em;
+    min-height: 100vh;
+    background-color: #18181a;
+}
+
+.main-heading{
+  font-weight: bold;
+  color: #8d8d8d;
+  padding-left: 0.5em;
+  border-left: 3px solid #00adb5;
+  border-right: 3px solid #00adb5;
+}
+@media screen and (min-width: 900px) {
+ 
+}
+
+/*==================Education section======================*/
+
+.my-education{
+    min-height: 100vh;
+    background-color: #111111;
+}
+
+.main-heading{
+  font-weight: bold;
+  color: #8d8d8d;
+  padding-left: 0.5em;
+  border-left: 3px solid #00adb5;
+  border-right: 3px solid #00adb5;
+}
+@media screen and (min-width: 900px) {
+ 
+}
+/*==================skills section======================*/
+
+.my-skills{
+    min-height: 100vh;
+    background-color: #18181a;
+}
+
+.main-heading{
+  font-weight: bold;
+  color: #8d8d8d;
+  padding-left: 0.5em;
+  border-left: 3px solid #00adb5;
+  border-right: 3px solid #00adb5;
+}
+@media screen and (min-width: 900px) {
+ 
+}
+/*==================projects section======================*/
+
+.my-portfolio{
+    min-height: 100vh;
+    background-color: #111111;
+}
+
+.main-heading{
+  font-weight: bold;
+  color: #8d8d8d;
+  padding-left: 0.5em;
+  border-left: 3px solid #00adb5;
+  border-right: 3px solid #00adb5;
+}
+@media screen and (min-width: 900px) {
+ 
+}
+/*==================projects section======================*/
+
+.my-footer{
+    min-height: 100vh;
+    background-color: #18181a;
 }
 
 @media screen and (min-width: 900px) {
  
 }
+
+
