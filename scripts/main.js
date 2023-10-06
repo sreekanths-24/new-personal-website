@@ -8,6 +8,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+var typed = new Typed('.logotype', {
+    strings: [
+        'SREEKANTH S'
+    ],
+    typeSpeed: 80,
+    showCursor: true,
+    cursorChar: "|"
+  });
 var typed = new Typed('.typing', {
     strings: [
         'am Sreekanth S.', 
