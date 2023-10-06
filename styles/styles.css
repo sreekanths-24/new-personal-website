@@ -321,7 +321,7 @@ display: none;
  /*==================Education section======================*/
  
  .my-education{
-     min-height: 100vh;
+     min-height: fit-content;
      background-color: #111111;
  }
  
