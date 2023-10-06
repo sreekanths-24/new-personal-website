@@ -342,7 +342,7 @@ display: none;
  /*==================projects section======================*/
  
  .my-portfolio{
-     min-height: 100vh;
+     min-height: fit-content;
      background-color: #111111;
  }
  
