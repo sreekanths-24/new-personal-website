@@ -14,7 +14,8 @@ var typed = new Typed('.logotype', {
     ],
     typeSpeed: 80,
     showCursor: true,
-    cursorChar: "|"
+    cursorChar: ".",
+    loop: false
   });
 var typed = new Typed('.typing', {
     strings: [
