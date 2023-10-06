@@ -44,7 +44,6 @@
          color: #eeeeee;
          align-items: center;
          justify-content: space-between;
-         padding: 0 1em;
          position: fixed;
          top: 0;
          left: 0;
@@ -61,6 +60,10 @@
      }
      nav #togglenav{
          font-size: 1.5rem;
+         padding-right: 0.60em;
+     }
+     nav .logo h4{
+        padding-left: 0.60em;
      }
      nav .logo h4{
      font-size: 1.5rem;
