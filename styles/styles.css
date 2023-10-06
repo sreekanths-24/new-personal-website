@@ -5,6 +5,11 @@
  a{
      text-decoration: none;
      color: #8d8d8d;
+     font-size: 1.2rem;
+ }
+ p{
+    font-size: 1.2rem;
+    line-height: 1.2;
  }
  
  body{
@@ -259,14 +264,14 @@ display: none;
      font-weight: bold;
  
  }
- #know-more-btn{
+ .know-more-btn{
      padding: 0.5em 1em;
      font-size: 1.5rem;
      color: #00adb5;
      border:2px solid currentColor;
      width: max-content;  
  }
- #know-more-btn:hover{
+ .know-more-btn:hover{
      background-color: #00adb5;
      color: #111111;
      border: 2px solid #00adb5;
