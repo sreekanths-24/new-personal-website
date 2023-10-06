@@ -254,6 +254,9 @@ body{
     transition: all 0.5s;
     font-weight: bold;
 }
+.heading-div div{
+    height: 40%;
+}
 .heading-div{
     width: 100%;
     height: 70%;
@@ -264,7 +267,9 @@ body{
     .landing-page{
         margin-top: -2.4vh;
     }
-
+    .heading-div div{
+        margin: 0 auto;
+    }
 }
 
 
