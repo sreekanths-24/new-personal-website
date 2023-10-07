@@ -24,7 +24,7 @@ function sendMail(){
 }
 
 function checkMail(){
-    if(document.getElementById('user-name').value == '' || document.getElementById('user-email').value == '' || document.getElementById('user-num').value == '' || document.getElementById('user-message').value == ''){
+    if(document.getElementById('user-name').value == '' || document.getElementById('user-email').value == '' || document.getElementById('user-message').value == ''){
         alert("Please fill the form before submitting.");
     } else {
         sendMail()
