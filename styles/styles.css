@@ -23,6 +23,11 @@
     right: 20px;
     z-index: 1;
     background-color: #111111;
+    display: block;
+    padding: 0.5em;
+    border: 2px solid #00adb5;
+    width: fit-content;
+    height: fit-content;
 }
 /* Initially hide the link */
 #scroll-to-top {
