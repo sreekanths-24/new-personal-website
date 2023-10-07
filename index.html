@@ -100,9 +100,8 @@
             </div>
 
         </section>
-        <a href="#landing" id="scroll-to-top" class="floating-btn"><i class="fa-solid fa-arrow-up"></i></a>
         <div class="divider"></div>
-
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
         <section id="about" class="about-me pt-5 px-3">
             <h1 class="main-heading mt-2 display-5">About Me</h1>
             <div class="row my-3">
@@ -339,25 +338,8 @@
              menu.classList.remove('nav-active');    
          }
      }
- </script>
- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
- <script>
- $(document).ready(function() {
-   $(window).scroll(function() {
-     // Calculate the position of the landing section
-     var landingSectionPosition = $('#landing').offset().top;
-     
-     // Calculate the current scroll position
-     var scrollPosition = $(window).scrollTop();
-     
-     // Adjust the condition based on when you want the link to appear/disappear
-     if (scrollPosition > landingSectionPosition) {
-       $('#scroll-to-top').fadeIn(); // Show the link
-     } else {
-       $('#scroll-to-top').fadeOut(); // Hide the link
-     }
-   });
- });
+
+    
  </script>
  
 </body>
