@@ -96,6 +96,7 @@
             </div>
 
         </section>
+        <a href="#landing" id="scroll-to-top" class="know-more-btn know-more-btn-small floating-btn"><i class="fa-solid fa-arrow-up"></i></a>
 
         <section id="about" class="about-me py-5 px-3">
             <h1 class="main-heading mt-2 display-5">About Me</h1>
@@ -120,9 +121,9 @@
 
                         <a href="./images/Resume.pdf" class="know-more-btn" download>My Resume</a>
                     </div>
-                    </article>
-                </div>
+                </article>
             </div>
+        </div>
         </section>
         <section id="education" class="my-education py-5 px-3">
             <h1 class="main-heading mt-2 display-5">Education</h1>
@@ -319,5 +320,25 @@
          }
      }
  </script>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script>
+ $(document).ready(function() {
+   $(window).scroll(function() {
+     // Calculate the position of the landing section
+     var landingSectionPosition = $('#landing').offset().top;
+     
+     // Calculate the current scroll position
+     var scrollPosition = $(window).scrollTop();
+     
+     // Adjust the condition based on when you want the link to appear/disappear
+     if (scrollPosition > landingSectionPosition) {
+       $('#scroll-to-top').fadeIn(); // Show the link
+     } else {
+       $('#scroll-to-top').fadeOut(); // Hide the link
+     }
+   });
+ });
+ </script>
+ 
 </body>
 </html>
