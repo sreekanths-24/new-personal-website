@@ -168,8 +168,8 @@ a{
      .nav-active{
          height: 70vh;
          font-size: 1.2rem;
-         border-top-left-radius: 50px;
-         border-top-right-radius: 50px;
+         border-top-left-radius: 20px;
+         border-top-right-radius: 20px;
      }
  }
  @media screen and (min-width: 900px) {
@@ -220,14 +220,14 @@ a{
          font-size: 1.2rem;
      }
  
-     nav li a:hover{
+     nav li a:hover, nav li a:focus{
          font-size: 1.2rem;
          color: #00adb5;
          transition: all 0.5s;
          border-radius: 10px;
          font-weight: bold;
      }
-     nav li a:hover i{
+     nav li a:hover i, nav li a:focus i{
          color: #00adb5;
      }
      
@@ -306,7 +306,7 @@ display: none;
      border:2px solid currentColor;
      width: max-content;  
  }
- .know-more-btn:hover{
+ .know-more-btn:hover, .know-more-btn:focus{
      background-color: #00adb5;
      color: #111111;
      border: 2px solid #00adb5;
