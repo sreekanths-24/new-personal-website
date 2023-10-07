@@ -111,7 +111,7 @@
      
      .nav-active {
      background-color: #111111;
-     border-top: 2px solid #393e46;
+     border-top: 2px solid #00adb5;
      position: fixed;
      bottom: 0;
      width: 100%;
@@ -371,7 +371,7 @@ display: none;
  /*==================projects section======================*/
  
  .my-footer{
-     min-height: 100vh;
+     min-height: fit-content;
      background-color: #18181a;
  }
  /* Disable outline and borders for input fields */
@@ -390,8 +390,42 @@ input[type="submit"]{
 textarea {
     resize: none;
 }
+
+.second-column{
+    border-top: 2px solid #393e46;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    
+}
+
+#myregard{
+    margin-top: 1em;
+}
+
+#social-links{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#social-links i{
+    font-size: 2.5rem;
+    color: #8d8d8d;
+}
+#social-links i:hover{
+    color: #00adb5;
+    transition: all 0.5s;
+}
  @media screen and (min-width: 900px) {
-  
+    .second-column{
+        border-left: 2px solid #393e46;
+        border-top: none;
+    }    
+    #myregard{
+        margin-top: 0;
+    }
  }
  
  
