@@ -46,7 +46,7 @@ a{
  }
  
  body{
-     background-color: #111111;
+     background-color: #18181a;
  }
  
  /* Extra small devices (phones, 600px and down) */
@@ -390,7 +390,14 @@ display: none;
   
  }
  /*==================projects section======================*/
- 
+ .divider {
+    background-color: #111111;
+    position: relative;
+    z-index: 3;
+    clip-path: polygon(0% 0%, 0% 100%, 100% calc(100% - 5vw), 100% 0%);
+    -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% calc(100% - 5vw), 100% 0%);
+    height: 50px;
+}
  .my-footer{
      min-height: fit-content;
      background-color: #18181a;
