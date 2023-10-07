@@ -279,8 +279,11 @@ display: none;
      border: 2px solid #00adb5;
      transition: all 0.5s;
      font-weight: bold;
- }
- .heading-div div{
+    }
+.know-more-btn-small{
+    font-size: 1.2rem;
+}
+.heading-div div{
      height: 40%;
  }
  .heading-div{
