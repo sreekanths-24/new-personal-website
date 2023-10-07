@@ -28,18 +28,6 @@
 #scroll-to-top {
     display: none;
   }
-  
-  /* Style your button as desired */
-  .know-more-btn {
-    /* Add your button styles here */
-  }
-  
-  .floating-btn {
-    /* Add styles to make it appear floating if desired */
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-  }
     
 a{
      text-decoration: none;
