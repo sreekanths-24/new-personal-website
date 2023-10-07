@@ -2,6 +2,17 @@
     font-family: 'Quicksand', sans-serif;
      color: #8d8d8d;
  }
+ ::-webkit-scrollbar{
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #00adb5;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
  a{
      text-decoration: none;
      color: #8d8d8d;
@@ -234,10 +245,6 @@ display: none;
          font-size: 1.5rem;
      }
  
-     nav li a:hover{
-         font-size: 1.8rem;
-     }
- 
      nav .logo{
          font-size: 2rem;
      }
@@ -339,8 +346,17 @@ display: none;
      background-color: #18181a;
  }
  
+ .first-skill-card{
+     border-bottom: 2px solid #393e46;
+ }
  @media screen and (min-width: 900px) {
-  
+  .first-skill-card{
+      border-right: 2px solid #393e46;
+      border-bottom: none;
+  }
+      .first-skill-card h3{
+        border-bottom: 2px solid #393e46;
+    }
  }
  /*==================projects section======================*/
  
@@ -358,7 +374,22 @@ display: none;
      min-height: 100vh;
      background-color: #18181a;
  }
- 
+ /* Disable outline and borders for input fields */
+ input[type="text"], input[type="email"],input[type="tel"], textarea {
+    border: none;
+    outline: none;
+    background-color: #111111;
+    color: #8d8d8d;
+    font-weight: bold;
+}
+
+input[type="submit"]{
+    background-color: #18181a;
+}
+/* Make the textarea non-resizable */
+textarea {
+    resize: none;
+}
  @media screen and (min-width: 900px) {
   
  }
