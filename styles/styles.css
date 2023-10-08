@@ -354,9 +354,19 @@ display: none;
  }
  .heading-div{
      width: 100%;
-     height: 70%;
+     height: 80%;
      display: flex;
      align-items: center;
+ }
+
+ .button-div{
+     width: 50%;
+     margin: 0 auto;
+     height: 20%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
  }
  @media screen and (min-width: 900px) {
      .landing-page{
@@ -364,6 +374,11 @@ display: none;
      }
      .heading-div div{
          margin: 0 auto;
+     }
+
+     .button-div{
+         flex-direction: row;
+         justify-content: space-evenly;
      }
  }
  
@@ -421,6 +436,33 @@ display: none;
      background-color: #111111;
  }
  
+ @media screen and (min-width: 900px) {
+  
+ }
+ /*==================projects section======================*/
+ 
+ .my-experience{
+     min-height: 100vh;
+     background-color: #18181a;
+ }
+ 
+ @media screen and (min-width: 900px) {
+  
+ }
+ /*==================projects section======================*/
+ 
+ .my-services{
+     min-height: fit-content;
+     background-color: #111111;
+ }
+ .hire-icon{
+     color: #393e46;
+    }
+ .hire-icon:hover{
+     color: #00adb5;
+     transition: all 0.5s;
+ }
+
  @media screen and (min-width: 900px) {
   
  }
