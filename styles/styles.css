@@ -69,22 +69,22 @@ a{
 /* Style the header: fixed position (always stay at the top) */
 .headerbar {
     position: fixed;
-    bottom: 0;
+    top: 0;
     z-index: 1;
     width: 100%;
-    background-color: transparent;
+    background-color: #111111;
   }
   
   /* The progress container (grey background) */
   .progress-container {
     width: 100%;
-    height: 4px;
-    background: transparent;
+    height: 3px;
+    background: #111111;
   }
   
   /* The progress bar (scroll indicator) */
   .progress-bar {
-    height: 4px;
+    height: 3px;
     background: #00adb5;
     width: 0%;
   }
@@ -122,7 +122,7 @@ a{
          align-items: center;
          justify-content: space-between;
          position: fixed;
-         top: 0;
+         top: 3px;
          left: 0;
          right: 0;
          width: 100%;
@@ -319,7 +319,6 @@ display: none;
      background-color: #111111;
      min-height: fit-content;
      height: 100vh;
-     max-height: 1000px;
      padding: 2em 1em;
      display: flex;
      align-items: center;
@@ -373,7 +372,7 @@ display: none;
  /*==================About section======================*/
  
  .about-me{
-     min-height: 100vh;
+     min-height: fit-content;
      background-color: #18181a;
  }
  
@@ -402,7 +401,7 @@ display: none;
  /*==================skills section======================*/
  
  .my-skills{
-     min-height: 100vh;
+     min-height: fit-content;
      background-color: #18181a;
  }
  

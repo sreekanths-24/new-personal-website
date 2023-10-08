@@ -13,8 +13,7 @@ var typed = new Typed('.logotype', {
         'SREEKANTH S'
     ],
     typeSpeed: 80,
-    showCursor: true,
-    cursorChar: ".",
+    showCursor: false,
     loop: false
   });
 var typed = new Typed('.typing', {
