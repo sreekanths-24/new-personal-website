@@ -439,17 +439,104 @@ display: none;
  @media screen and (min-width: 900px) {
   
  }
- /*==================projects section======================*/
+ /*==================experience section======================*/
  
  .my-experience{
      min-height: 100vh;
      background-color: #18181a;
  }
  
- @media screen and (min-width: 900px) {
-  
+ .exp-timeline{
+    margin: 5em auto;
+    max-width: 34.15em;
  }
- /*==================projects section======================*/
+
+ .exp-checkpoint{
+    max-width: 34em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+ }
+
+ .exp-checkpoint div{
+    border: 2px solid #00adb5;
+    padding: 1.5em;
+ }
+
+ .exp-checkpoint p{
+    color: #8d8d8d;
+ }
+
+ .exp-checkpoint:nth-child(odd){
+    border-left: 1px solid #00adb5;
+    padding-left: 3em;
+    transform: translateX(17em);
+ }
+
+ .exp-checkpoint:nth-child(even){
+    border-right: 1px solid #00adb5;
+    padding-right: 3em;
+    transform: translateX(-17em);
+ }
+ .exp-checkpoint:nth-child(even)::before,.exp-checkpoint:nth-child(odd)::before{
+    content: "";
+    background-color: #00adb5;
+    width: 3em;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+ }
+
+ .exp-checkpoint:nth-child(odd)::before{
+    left: 0;
+ }
+ .exp-checkpoint:nth-child(even)::before{
+    right: 0;
+ }
+.exp-checkpoint:nth-child(odd) div::before,
+ .exp-checkpoint:nth-child(even) div::before{
+    content: "";
+    background-color: #00adb5;
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+ }
+ .exp-checkpoint:nth-child(odd) div::before{
+    left: -0.5em;
+ }
+    .exp-checkpoint:nth-child(even) div::before{
+        right: -0.5em;
+    }
+ @media screen and (max-width: 1150px) {
+    .exp-timeline{
+        width: 80vw;
+    }
+
+    .exp-timeline .exp-checkpoint{
+        width: 100%;
+        transform: none;
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+    }
+    .exp-timeline .exp-checkpoint::before{
+        width: 3px;
+        height: 4em;
+        top: -2em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .exp-timeline .exp-checkpoint div::before{
+        top: -0.5em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+ }
+ /*==================services section======================*/
  
  .my-services{
      min-height: fit-content;
