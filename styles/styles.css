@@ -450,7 +450,7 @@ display: none;
  }
  
  .exp-timeline{
-    margin: 5em auto;
+    margin: 2em auto;
     max-width: 34.15em;
  }
 
@@ -463,7 +463,6 @@ display: none;
 
  .exp-checkpoint div{
     border: 2px solid #00adb5;
-    padding: 1.5em;
  }
 
  .exp-checkpoint p{
