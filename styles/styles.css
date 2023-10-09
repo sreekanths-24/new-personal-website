@@ -628,7 +628,6 @@ textarea {
 }
  @media screen and (min-width: 900px) {
     .second-column{
-        border-left: 2px solid #393e46;
         border-top: none;
     }    
     #myregard{

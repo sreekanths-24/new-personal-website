@@ -39,15 +39,7 @@
      <meta name="twitter:description" content="This is the official Personal website of Sreekanth S. Thanks for visiting.">
      <meta name="twitter:image" content="./images/logo-dark-big.png">
 
-     <!-- == Email js == -->
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-    (function(){
-        emailjs.init("x4Qmyw7zurNieWh2r");
-    })();
-    </script>
+    
 <style>
 
 </style>
@@ -170,9 +162,9 @@
         <section id="skills" class="my-skills pt-5 px-3">
             <h1 class="main-heading mt-2 display-5">My Skills</h1>
             <div class="row" id="skillbody">
-                <div class="col-lg mt-3 first-skill-card">
+                <div class="col-md mt-3 first-skill-card">
                     <h3 class="h3" style="font-weight: bold;">Web Development</h3>
-                    <div class="skillscards">
+                    <div class="skillscards py-3">
                         <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white" alt="HTML5">
                         <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&amp;logo=css3&amp;logoColor=white" alt="CSS3">
                         <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E" alt="JavaScript">
@@ -195,14 +187,14 @@
                     </div>
                     <br>
                     <div class="d-flex justify-content-center flex-column">
-                        <h4 class="h4">GitHub Stats</h4>
-                        <a href="https://github.com/anuraghazra/github-readme-stats" class="github-card my-2 mx-auto">
-                            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sreekanths-24&layout=compact&theme=dark" alt="Top Langs">
+                        <!-- <h4 class="h4 text-center">GitHub Stats</h4> -->
+                        <a href="https://github.com/anuraghazra/github-readme-stats" class="github-card my-2 mx-auto w-100" style="max-width: 400px;">
+                            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sreekanths-24&layout=compact&theme=dark" alt="Top Langs" class="w-100">
                         </a>
                     </div>
         
                 </div>
-                <div class="col-lg  my-3 first-skill-card">
+                <div class="col-md  my-3 first-skill-card">
                     <h3 class="h3" style="font-weight: bold;">My Achievements</h3>
                     <div class="card my-3 mx-auto" style=" border-radius: 0; background-color: #111111; max-width: 350px; box-shadow: none;">
                         <img src="./images/PDSA.jpg" class="card-img-top" style="border-radius: 0;" alt="school img">
@@ -299,7 +291,7 @@
 
         </div>
 
-        <section id="services" class="my-services py-5 px-3">
+        <section id="services" class="my-services pt-5 px-3">
             <h1 class="main-heading mt-2 display-5">My Services</h1>
             <br>
             <div class="row">
@@ -326,6 +318,11 @@
                     </div>
                 </div>
             </div>
+            <div class="mt-3 d-flex justify-content-center">
+                <a href="https://www.youtube.com/@IAmSreekanthS" class="know-more-btn" target="_blank">Go To YouTube</a>
+
+            </div>
+
         </section>
         <div class="divider"></div>
 
@@ -333,7 +330,7 @@
             <div class="row">
                 <div class="col-md">
                     <h2 class="h2" style="font-weight: bold;">Contact Me <i class="fa-solid fa-paper-plane" style="color: #00adb5; font-size: 1.3rem;"></i></h2>
-                    <form class="w-100"> <!-- Replace "#" with your form submission URL -->
+                    <form class="w-100" onsubmit="sendEmail(); reset(); return false;"> <!-- Replace "#" with your form submission URL -->
                         <input type="text" id="user-name" name="name" class="w-100 p-3" placeholder="Enter your name" required><br><br>
                         
                         <input type="email" id="user-email" name="email" class="w-100 p-3" placeholder="Enter your email" required><br><br>
@@ -341,7 +338,7 @@
                         
                         <textarea id="user-message" name="message" rows="10" cols="40" class="w-100 p-3" placeholder="Leave me a message and I will reply as soon as possible." required></textarea><br><br>
                         
-                        <input type="submit" value="Submit" class="know-more-btn know-more-btn-small my-0 mx-auto" onclick="checkMail()">
+                        <input type="submit" value="Submit" class="know-more-btn know-more-btn-small my-0 mx-auto">
                     </form>
                     <br>
                 </div>
@@ -384,9 +381,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="scripts/typed.js"></script>
     <script src="scripts/main.js"></script>
-    
-    <script src="scripts/sendmail.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
+        function sendEmail(){
+
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "username",
+                Password : "password",
+                To : 'them@website.com',
+                From : "you@isp.com",
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            }).then(
+                message => alert(message)
+                );
+            }
         const icon = document.getElementById('togglenav');
      const menu = document.getElementById('nav-link-id');
 
