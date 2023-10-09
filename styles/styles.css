@@ -34,6 +34,11 @@
     width: fit-content;
     height: fit-content;
 }
+
+.card:hover, .card:focus{
+    border: 0.5px solid #00adb5;
+}
+
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -64,7 +69,7 @@ a{
  }
  
  body{
-     background-color: #18181a;
+     background-color: #191919;
  }
 /* Style the header: fixed position (always stay at the top) */
 .headerbar {
@@ -255,10 +260,8 @@ a{
      }
  
      nav li a:hover, nav li a:focus{
-         font-size: 1.2rem;
          color: #00adb5;
          transition: all 0.5s;
-         border-radius: 10px;
          font-weight: bold;
      }
      nav li a:hover i, nav li a:focus i{
@@ -388,7 +391,7 @@ display: none;
  
  .about-me{
      min-height: fit-content;
-     background-color: #18181a;
+     background-color: #191919;
  }
  
  .main-heading{
@@ -417,7 +420,7 @@ display: none;
  
  .my-skills{
      min-height: fit-content;
-     background-color: #18181a;
+     background-color: #191919;
  }
  
  @media screen and (min-width: 900px) {
@@ -443,7 +446,7 @@ display: none;
  
  .my-experience{
      min-height: 100vh;
-     background-color: #18181a;
+     background-color: #191919;
  }
  
  .exp-timeline{
@@ -568,7 +571,7 @@ display: none;
 }
 
 .divider2{
-    background-color: #18181a;
+    background-color: #191919;
     position: relative;
     clip-path: polygon(0% 0%, 0% 100%, 100% calc(100% - 5vw), 100% 0%);
     -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% calc(100% - 5vw), 100% 0%);
@@ -578,7 +581,7 @@ display: none;
 /*==================footer section======================*/
  .my-footer{
      min-height: fit-content;
-     background-color: #18181a;
+     background-color: #191919;
  }
  /* Disable outline and borders for input fields */
  input[type="text"], input[type="email"],input[type="tel"], textarea {
@@ -591,7 +594,7 @@ display: none;
 
 
 input[type="submit"]{
-    background-color: #18181a;
+    background-color: #191919;
 }
 /* Make the textarea non-resizable */
 textarea {
