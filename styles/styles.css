@@ -22,6 +22,7 @@
     color: #00adb5;
 
 }
+
 .floating-btn{
     position: fixed;
     bottom: 20px;
@@ -60,14 +61,21 @@
 a{
      text-decoration: none;
      color: #8d8d8d;
-     font-size: 1.2rem;
+     font-size: 1.1rem;
  }
  p{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    text-indent: 1em;
     line-height: 1.2;
     text-align: justify;
  }
- 
+ .card p {
+    text-indent: 0;
+ }
+
+ .my-services .card p{
+    text-indent: 1em;
+ }
  body{
      background-color: #191919;
  }
@@ -341,7 +349,15 @@ display: none;
      color: #00adb5;
      border:2px solid currentColor;
      width: max-content;  
+     background-color: #191919;
  }
+ .know-more-btn i{
+    color: #00adb5;
+ }
+ .know-more-btn:hover i, .know-more-btn:focus i{
+    color: #111111;
+ }
+
  .know-more-btn:hover, .know-more-btn:focus{
      background-color: #00adb5;
      color: #111111;
@@ -592,9 +608,6 @@ display: none;
 }
 
 
-input[type="submit"]{
-    background-color: #191919;
-}
 /* Make the textarea non-resizable */
 textarea {
     resize: none;
