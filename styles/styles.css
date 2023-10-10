@@ -18,30 +18,12 @@
     background-color: #00adb5;
     color: #111111;
 }
-.floating-btn i{
-    color: #00adb5;
-
-}
-
-.floating-btn{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1;
-    background-color: #111111;
-    display: block;
-    padding: 0.5em;
-    border: 2px solid #00adb5;
-    width: fit-content;
-    height: fit-content;
-}
-
 
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 20px; /* Place the button 30px from the right */
+    bottom: 5px; /* Place the button at the bottom of the page */
+    right: 5px; /* Place the button 30px from the right */
     z-index: 1; /* Make sure it does not overlap */
     border: 2px solid #00adb5;
     outline: none; /* Remove outline */
