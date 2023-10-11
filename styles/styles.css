@@ -143,7 +143,7 @@ a{
         padding-left: 0.60em;
      }
      nav .logo h4{
-     font-size: 1.5rem;
+     font-size: 1.4rem;
      color: #eeeeee;
      font-weight: bold;
      margin-left: 10px;
@@ -557,7 +557,7 @@ display: none;
     position: relative;
     clip-path: polygon(0% 0%, 0% 100%, 100% calc(100% - 5vw), 100% 0%);
     -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% calc(100% - 5vw), 100% 0%);
-    height: 60px;
+    height: 70px;
 }
 
 .div2container{

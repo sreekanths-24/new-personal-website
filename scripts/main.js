@@ -2,11 +2,23 @@
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            // Use a cubic-bezier easing function for the animation
+            const cubicBezierTiming = 'cubic-bezier(0.42, 0, 0.58, 1)';
+            
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+                inline: 'nearest',
+                timingFunction: cubicBezierTiming
+            });
+        }
     });
 });
+
 
 var typed = new Typed('.logotype', {
     strings: [
