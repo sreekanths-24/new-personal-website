@@ -1,0 +1,117 @@
+<div class="exp-timeline">
+                <div class="exp-checkpoint">
+                    <div class="p-3">
+                        <h2 class="h2" style="font-weight: bold;">Athma23 Website</h2>
+                        <h3 class="h4" style="font-weight: bold;">April 2023</h3>
+                        <p>
+                            I helped create my college techfest site, focusing on front-end using HTML, CSS, JavaScript, gaining valuable web development skills.
+                        </p>
+                    </div>
+                </div>
+                <div class="exp-checkpoint">
+                    <div class="p-3">
+                        <h2 class="h2" style="font-weight: bold;">Kalhara Concept Website</h2>
+                        <h3 class="h4" style="font-weight: bold;">September 2023 to present</h3>
+                        <p>
+                            I contributed in the development of Kalhara Concept's website, enhancing front-end skills in HTML, CSS, JavaScript, gaining valuable web development experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class=" d-flex justify-content-center">
+                <a href="https://www.linkedin.com/in/sreekanth-s-663418232" target="_blank" rel="noopener noreferrer" class="know-more-btn">Go To <i class="fa-brands fa-linkedin"></i></a>
+
+            </div>
+
+
+
+ .exp-timeline{
+    margin: 2em auto;
+    max-width: 34.15em;
+ }
+
+ .exp-checkpoint{
+    max-width: 34em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+ }
+
+ .exp-checkpoint div{
+    border: 2px solid #00adb5;
+    background-color: #111111;
+ }
+
+ .exp-checkpoint p{
+    color: #8d8d8d;
+ }
+
+ .exp-checkpoint:nth-child(odd){
+    border-left: 1px solid #00adb5;
+    padding-left: 3em;
+    transform: translateX(17em);
+ }
+
+ .exp-checkpoint:nth-child(even){
+    border-right: 1px solid #00adb5;
+    padding-right: 3em;
+    transform: translateX(-17em);
+ }
+ .exp-checkpoint:nth-child(even)::before,.exp-checkpoint:nth-child(odd)::before{
+    content: "";
+    background-color: #00adb5;
+    width: 3em;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+ }
+
+ .exp-checkpoint:nth-child(odd)::before{
+    left: 0;
+ }
+ .exp-checkpoint:nth-child(even)::before{
+    right: 0;
+ }
+.exp-checkpoint:nth-child(odd) div::before,
+ .exp-checkpoint:nth-child(even) div::before{
+    content: "";
+    background-color: #00adb5;
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+ }
+ .exp-checkpoint:nth-child(odd) div::before{
+    left: -0.5em;
+ }
+    .exp-checkpoint:nth-child(even) div::before{
+        right: -0.5em;
+    }
+ @media screen and (max-width: 1150px) {
+    .exp-timeline{
+        width: 80vw;
+    }
+
+    .exp-timeline .exp-checkpoint{
+        width: 100%;
+        transform: none;
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+    }
+    .exp-timeline .exp-checkpoint::before{
+        width: 3px;
+        height: 4em;
+        top: -2em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .exp-timeline .exp-checkpoint div::before{
+        top: -0.5em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+ }
