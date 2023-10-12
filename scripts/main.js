@@ -31,11 +31,11 @@ var typed = new Typed('.logotype', {
 var typed = new Typed('.typing', {
     strings: [
         'am Sreekanth S.', 
+        'am a Freelancing Web Developer.', 
         'am a Full Stack Web Developer.', 
         'am a Computer Science Engineer.',
         'am a Tech Enthusiast.',
-        'love learning new things.',
-        'love to create and build things.'
+        'love learning new technologies.',
     ],
     smartBackspace: true,
     typeSpeed: 60,
