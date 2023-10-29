@@ -464,7 +464,6 @@ body {
   background-color: #00adb5;
   top: 18px;
   border-radius: 50%;
-  z-index: 1;
 }
 
 /* Place the container to the right */
@@ -478,7 +477,6 @@ body {
   content: " ";
   position: absolute;
   top: 18px;
-  z-index: 1;
   left: 30px;
   border: medium solid #111111;
   border-width: 10px 10px 10px 0;
