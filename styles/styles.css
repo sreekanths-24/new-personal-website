@@ -516,7 +516,23 @@ body {
 }
 
 @media screen and (min-width: 900px) {
+
 }
+/*==================animations section======================*/
+
+.hidden{
+  opacity: 0;
+  transform: translateY(20%);
+  transition: all 1s ease;
+  
+}
+
+.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 /*==================dividers section======================*/
 .divider {
   background-color: #111111;
@@ -537,6 +553,17 @@ body {
   clip-path: polygon(0% 0%, 0% 100%, 100% calc(100% - 5vw), 100% 0%);
   -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% calc(100% - 5vw), 100% 0%);
   height: 70px;
+}
+@media screen and (min-width: 900px) {
+  .divider {
+    height: 100px;
+  }
+  .div2container {
+    height: 100px;
+  }
+  .divider2 {
+    height: 100px;
+  }
 }
 
 /*==================footer section======================*/
