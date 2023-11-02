@@ -299,23 +299,7 @@ body {
 
 /*==================nav bar ends======================*/
 
-/*==================Landing page section======================*/
-.landing-page {
-  background-color: #111111;
-  min-height: fit-content;
-  height: 100vh;
-  padding: 2em 1em;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-}
-
-.landing-page h1 {
-  font-size: 2.5rem;
-  color: #00adb5;
-  font-weight: bold;
-}
+/*==================Button section======================*/
 .know-more-btn {
   padding: 0.5em 1em;
   font-size: 1.5rem;
@@ -337,12 +321,31 @@ body {
   background-color: #00adb5;
   color: #111111;
   border: 2px solid #00adb5;
+  transform: translateY(-5px);
   transition: all 0.5s;
   font-weight: bold;
 }
 .know-more-btn-small {
   font-size: 1.2rem;
 }
+/*==================Landing page section======================*/
+.landing-page {
+  background-color: #111111;
+  min-height: fit-content;
+  height: 100vh;
+  padding: 2em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.landing-page h1 {
+  font-size: 2.5rem;
+  color: #00adb5;
+  font-weight: bold;
+}
+
 .heading-div div {
   height: 40%;
 }

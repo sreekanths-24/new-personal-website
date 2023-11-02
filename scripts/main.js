@@ -76,6 +76,8 @@ function myFunction() {
  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
  
+
+// Intersection Observer API for scrolling animations
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
