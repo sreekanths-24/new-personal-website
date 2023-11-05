@@ -394,6 +394,9 @@ body {
   border-right: 3px solid #00adb5;
 }
 @media screen and (min-width: 900px) {
+  .about-me-paragraph{
+    transform: translateY(15%);
+  }
 }
 
 /*==================Education section======================*/
@@ -430,6 +433,13 @@ body {
 }
 
 @media screen and (min-width: 900px) {
+  .pcardl{
+    transform: translateY(10%);
+  }
+  .pcardr{
+    transform: translateY(-10%);
+  }
+    
 }
 /*==================experience section======================*/
 
