@@ -196,12 +196,11 @@ body {
   }
 }
 @media screen and (min-width: 900px) {
-  #nav-gap {
+  #nav-gap, .oeirgoeg, #logoimg {
     display: none;
   }
-  #logoimg {
-    display: none;
-  }
+   
+
   nav {
     position: fixed;
     top: 0;
