@@ -115,3 +115,28 @@
         transform: translateX(-50%);
     }
  }
+
+ old education section
+
+ <div class="row">
+                <div class="col-md">
+                    <div class="card my-3 mx-auto hidden" style=" border-radius: 0; background-color: #1f1f1f; max-width: 450px; box-shadow: none;">
+                        <img src="./images/bhavans.jpeg" class="card-img-top" style="border-radius: 0;" alt="school img">
+                        <div class="card-body">
+                            <h1 class="h3" style="color: #8d8d8d;">High School | Bio Maths</h1>
+                            <p class="card-text" style="min-height: 60px; display: flex; align-items: center;">Central Board of Secondary Education | 2018-2020</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md">
+                    <div class="card my-3 mx-auto hidden" style=" border-radius: 0; background-color: #1f1f1f; max-width: 450px; box-shadow: none;">
+                        <img src="./images/awh2.jpeg" class="card-img-top" style="border-radius: 0;" alt="College img">
+                        <div class="card-body">
+                            <h1 class="h3" style="color: #8d8d8d;">UG | BTech in CSE</h1>
+                            <p class="card-text" style="min-height: 60px; display: flex; align-items: center;">APJ Abdul Kalam Technological University (KTU) | 2020-2024</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>

@@ -239,7 +239,7 @@ body {
   nav li a {
     color: #8d8d8d;
     letter-spacing: 1px;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   nav li a:hover,
@@ -392,7 +392,7 @@ body {
   border-left: 3px solid #00adb5;
   border-right: 3px solid #00adb5;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1300px) {
   .about-me-paragraph{
     transform: translateY(15%);
   }
