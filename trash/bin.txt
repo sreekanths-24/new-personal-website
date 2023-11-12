@@ -140,3 +140,64 @@
                     
                 </div>
             </div>
+
+
+old project section 
+<!-- <div class="row">
+                <div class="col-md pcardl">
+                    <div class="card my-3 mx-auto hidden " style="max-width: 450px; border-radius: 0; background-color: #1f1f1f; box-shadow: none;">
+                        <img src="./images/crm.png" class="card-img-top" style="border-radius: 0; aspect-ratio: 16/9;" alt="College img">
+                        <div class="card-body">
+                            <h3 class="card-title h3"  style="color: #8d8d8d;">Customer Relationship Management System</h3>
+                            <p class="card-text" style="min-height: 50px; display: flex; align-items: center;">6th Semster mini project.</p>
+                            <br><br>
+                            <a href="https://github.com/sreekanths-24/CRM" target="_blank" class="know-more-btn know-more-btn-small float-start">Code</a>
+                            <a href="https://youtu.be/GC7N1WHRYCI?si=vy_vK1_I8xHUSIJQ" class="know-more-btn know-more-btn-small float-end" target="_blank">Demo</a>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md">
+                    <div class="card my-3 mx-auto" style="max-width: 450px; border-radius: 0; background-color: #1f1f1f; box-shadow: none;">
+                        <img src="./images/athma-min.png" class="card-img-top" style="border-radius: 0;" alt="College img">
+                        <div class="card-body">
+                            <h3 class="card-title h3"  style="color: #8d8d8d;">Athma23 Website</h3>
+                            <p class="card-text">Collaborated in the making of my college's tech fest website.</p>
+                            <br><br>
+                            <a href="https://github.com/arfazkhan/ATHMA-23" target="_blank" class="know-more-btn know-more-btn-small float-start">Code</a>
+                            <a href="https://athma23.netlify.app/" class="know-more-btn know-more-btn-small float-end">View</a>
+                            <br><br>
+                        </div>
+                    </div>
+                    
+                </div> 
+                <div class="col-md pcardm">
+                    <div class="card my-3 mx-auto hidden " style="max-width: 450px; border-radius: 0; background-color: #1f1f1f; box-shadow: none;">
+                        <img src="./images/afcmin.png" class="card-img-top" style="border-radius: 0; aspect-ratio: 16/9;" alt="College img">
+                        <div class="card-body">
+                            <h3 class="card-title h3"  style="color: #8d8d8d;">Anonymous Feedback Collector Service</h3>
+                            <p class="card-text"  style="min-height: 50px; display: flex; align-items: center;">A tool that will help users to collect feedbacks from their audience.</p>
+                            <br><br>
+                            <a href="https://github.com/sreekanths-24/AFC" target="_blank" class="know-more-btn know-more-btn-small float-start">Code</a>
+                            <a href="https://afc-six.vercel.app/" class="know-more-btn know-more-btn-small float-end">View</a>
+                            <br><br>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md pcardr">
+                    <div class="card my-3 mx-auto hidden " style="max-width: 450px; border-radius: 0; background-color: #1f1f1f; box-shadow: none;">
+                        <img src="./images/kbfc.png" class="card-img-top" style="border-radius: 0; aspect-ratio: 16/9;" alt="College img">
+                        <div class="card-body">
+                            <h3 class="card-title h3"  style="color: #8d8d8d;">Kerala Blasters FC</h3>
+                            <p class="card-text"  style="min-height: 50px; display: flex; align-items: center;">A website that I build for KBFC as part of web for team program conducted by Gtech MuLearn.</p>
+                            <br><br><br>
+                            <a href="https://github.com/sreekanths-24/KBFC" target="_blank" class="know-more-btn know-more-btn-small float-start">Code</a>
+                            <a href="https://kbfc.netlify.app/" class="know-more-btn know-more-btn-small float-end">View</a>
+                            <br><br>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+             -->
