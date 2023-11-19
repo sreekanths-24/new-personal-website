@@ -332,7 +332,7 @@ body {
 .landing-page {
   background-color: #111111;
   min-height: fit-content;
-  height: 100dvh;
+  height: 100svh;
   padding: 2em 1em;
   display: flex;
   align-items: center;
