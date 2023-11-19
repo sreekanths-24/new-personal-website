@@ -395,7 +395,8 @@ body {
 }
 @media screen and (min-width: 1300px) {
   .about-me-paragraph {
-    transform: translateY(15%);
+    transform: translateY(8%);
+    padding: 0 2.5em;
   }
 }
 
