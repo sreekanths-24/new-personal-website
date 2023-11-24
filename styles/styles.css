@@ -433,7 +433,7 @@ body {
   background-color: #111111;
 }
 
-/* @media screen and (min-width: 900px) {
+@media screen and (min-width: 900px) {
   .pcardl{
     transform: translateY(10%);
   }
@@ -442,7 +442,7 @@ body {
   }
     
 }
- */
+
 .row-portfolio {
   display: flex;
   flex-wrap: wrap;
