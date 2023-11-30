@@ -22,11 +22,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 var typed = new Typed('.logotype', {
     strings: [
-        'SREEKANTH S'
+        'SREEKANTH S',
+        'WHATS THAT?',
+        'YOU NEED A WEBSITE?',
+        'YOU ARE AT..',
+        '..THE RIGHT PLACE!',
+        'FEEL FREE TO ..',
+        '..CONTACT ME!',
     ],
     typeSpeed: 80,
+    backDelay: 2000,
     showCursor: false,
-    loop: false
+    loop: true
   });
 var typed = new Typed('.typing', {
     strings: [
