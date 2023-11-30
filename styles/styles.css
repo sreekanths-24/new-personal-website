@@ -392,7 +392,6 @@ body {
   padding-left: 0.5em;
   border-left: 3px solid #00adb5;
   border-right: 3px solid #00adb5;
-  text-align: center;
 }
 @media screen and (min-width: 1300px) {
   .about-me-paragraph {
@@ -412,12 +411,12 @@ body {
   min-height: fit-content;
   background-color: #111111;
 }
-/* 
+
 @media screen and (min-width: 900px) {
   .main-heading {
     text-align: center;
   }
-} */
+}
 /*==================skills section======================*/
 
 .my-skills {
