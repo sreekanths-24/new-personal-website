@@ -79,6 +79,18 @@ body {
   background: #00adb5;
   width: 0%;
 }
+
+@media screen and (min-width: 900px) {
+  .pcardl{
+    transform: translateY(10%);
+  }
+  .pcardr{
+    transform: translateY(-10%);
+  }
+    
+}
+
+
 /* Extra small devices (phones, 600px and down) */
 #nav-gap {
   height: 3vh;
@@ -308,6 +320,7 @@ body {
   width: max-content;
   background-color: transparent;
 }
+
 .know-more-btn i {
   color: #00adb5;
 }
@@ -441,15 +454,6 @@ body {
   background-color: #111111;
 }
 
-@media screen and (min-width: 900px) {
-  .pcardl{
-    transform: translateY(10%);
-  }
-  .pcardr{
-    transform: translateY(-10%);
-  }
-    
-}
 
 .row-portfolio {
   display: flex;
@@ -505,7 +509,7 @@ body {
 /* The actual timeline (the vertical ruler) */
 .main-timeline-5 {
   position: relative;
-  max-width: 100%;
+  max-width: 70%;
   margin: 0 auto;
 }
 
