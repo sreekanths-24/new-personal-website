@@ -418,6 +418,11 @@ body {
     padding-right: 15%;
   }
 }
+@media screen and (max-width: 700px) {
+  .about-me .about-me-paragraph {
+    padding-top: 2em;
+  }
+}
 /*==================Education section======================*/
 
 .my-education {
