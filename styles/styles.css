@@ -341,6 +341,9 @@ body {
   transform: scale(1.2);
   transition: all 0.5s;
   font-weight: bold;
+  box-shadow: -6px 46px 172px -91px rgba(0,173,181,0.97);
+-webkit-box-shadow: -6px 46px 172px -91px rgba(0,173,181,0.97);
+-moz-box-shadow: -6px 46px 172px -91px rgba(0,173,181,0.97);
 }
 .know-more-btn-small {
   font-size: 1.2rem;
@@ -409,6 +412,11 @@ body {
   padding-left: 0.5em;
   border-left: 3px solid #00adb5;
   border-right: 3px solid #00adb5;
+}
+.about-me img{
+  box-shadow: -6px 46px 172px -91px rgba(0,173,181,0.97);
+-webkit-box-shadow: -6px 46px 172px -91px rgba(0,173,181,0.97);
+-moz-box-shadow: -6px 46px 172px -91px rgba(0,173,181,0.97);
 }
 @media screen and (min-width: 1300px) {
   .about-me-paragraph {
