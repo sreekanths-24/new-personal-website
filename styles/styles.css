@@ -169,6 +169,9 @@ body {
     min-height: fit-content;
     transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
+  nav ul li a{
+    font-weight: bold;
+  }
 
   .nav-active {
     background-color: #111111;
@@ -253,6 +256,7 @@ body {
     color: #8d8d8d;
     letter-spacing: 1px;
     font-size: 1rem;
+    font-weight: bold;
   }
 
   nav li a:hover,
