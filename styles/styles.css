@@ -407,7 +407,7 @@ body {
 @media  screen and (min-width: 900px) {
   .waves {
 
-    height: 300px;
+    height: 270px;
     }
     .button-div {
       margin-top: -30%;
@@ -583,7 +583,7 @@ body {
 /* The actual timeline (the vertical ruler) */
 .main-timeline-5 {
   position: relative;
-  max-width: 70%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
