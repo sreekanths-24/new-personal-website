@@ -348,7 +348,7 @@ body {
 }
 /*==================Landing page section======================*/
 .landing-page {
-  background-color: #111111;
+  /* background-color: #111111; */
   min-height: fit-content;
   height: 100svh;
   padding: 2em 1em;
@@ -356,6 +356,8 @@ body {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
 
 .landing-page h1 {
@@ -383,6 +385,68 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+@media screen and (max-width: 900px) {
+  .button-div {
+    margin-bottom: -40px;
+  }
+  
+}
+/* ========================= */
+
+.waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  /* background-color: var(--color); */
+  /* box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5); */
+  transition: 500ms;
+  z-index: -1;
+}
+@media  screen and (min-width: 900px) {
+  .waves {
+
+    height: 300px;
+    }
+    .button-div {
+      margin-top: -30%;
+    }
+  
+}
+.waves::before,
+.waves::after {
+  content: '';
+  position: absolute;
+  width: 300vw;
+  height: 300vw;
+  top: -65vw;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+
+.waves::before {
+  border-radius: 44%;
+  background: #00adb5;
+  animation: waves 8s linear infinite;
+}
+
+.waves::after {
+  border-radius: 44%;
+  background: #111111;
+  animation: waves 15s linear infinite;
+}
+
+@keyframes waves {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+
 @media screen and (min-width: 900px) {
   .landing-page {
     margin-top: -2.4vh;
