@@ -414,7 +414,15 @@ body {
     }
   
 }
-.waves::before,
+.waves::before{
+  content: '';
+  position: absolute;
+  width: 300vw;
+  height: 301vw;
+  top: -65vw;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
 .waves::after {
   content: '';
   position: absolute;
@@ -428,7 +436,7 @@ body {
 .waves::before {
   border-radius: 44%;
   background: #00adb5;
-  animation: waves 8s linear infinite;
+  animation: waves 15s linear infinite;
 }
 
 .waves::after {
@@ -440,6 +448,10 @@ body {
 @keyframes waves {
   0% {
     transform: translate(-50%, -75%) rotate(0deg);
+  }
+  
+  50% {
+    transform: translate(-50%, -75%) rotate(270deg);
   }
   
   100% {
