@@ -418,7 +418,7 @@ body {
   content: '';
   position: absolute;
   width: 300vw;
-  height: 301vw;
+  height: 302vw;
   top: -65vw;
   left: 50%;
   transform: translate(-50%, -75%);
@@ -450,7 +450,19 @@ body {
     transform: translate(-50%, -75%) rotate(0deg);
   }
   
+  12.5% {
+    transform: translate(-50%, -75%) rotate(45deg);
+  }
+  25% {
+    transform: translate(-50%, -75%) rotate(90deg);
+  }
+  37.5% {
+    transform: translate(-50%, -75%) rotate(135deg);
+  }
   50% {
+    transform: translate(-50%, -75%) rotate(180deg);
+  }
+  75% {
     transform: translate(-50%, -75%) rotate(270deg);
   }
   
