@@ -265,6 +265,7 @@ body {
     color: #00adb5;
     transition: all 0.5s;
     font-weight: bold;
+    transform: scale(1.1);
   }
   nav li a:hover i,
   nav li a:focus i , .active i{
