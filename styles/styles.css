@@ -1,4 +1,4 @@
-* {
+*, nav {
   font-family: "Quicksand", sans-serif;
   color: #8d8d8d;
 }
@@ -261,14 +261,15 @@ body {
   }
 
   nav li a:hover,
-  nav li a:focus {
+  nav li a:focus, .active {
     color: #00adb5;
     transition: all 0.5s;
     font-weight: bold;
   }
   nav li a:hover i,
-  nav li a:focus i {
+  nav li a:focus i , .active i{
     color: #00adb5;
+
   }
 
   nav .logo h4 {
@@ -324,6 +325,7 @@ body {
   border: 2px solid currentColor;
   width: max-content;
   background-color: transparent;
+  transition: all 1s;
 }
 
 .know-more-btn i {
@@ -332,6 +334,7 @@ body {
 .know-more-btn:hover i,
 .know-more-btn:focus i {
   color: #111111;
+  transition: all 0.25s;
 }
 
 .know-more-btn:hover,
@@ -340,8 +343,8 @@ body {
   color: #111111;
   border: 2px solid #00adb5;
   transform: scale(1.2);
-  transition: all 0.5s;
   font-weight: bold;
+  transition: all 0.25s;
 }
 .know-more-btn-small {
   font-size: 1.2rem;
