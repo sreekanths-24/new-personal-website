@@ -65,7 +65,7 @@ body {
 .headerbar {
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
   background-color: #111111;
 }
@@ -126,7 +126,7 @@ body {
     min-height: 40px;
     height: 4vh;
     max-height: 100px;
-    z-index: 1;
+    z-index: 10;
   }
   #logoimg {
     width: 35px;
@@ -734,10 +734,7 @@ body {
   background-color: transparent;
   box-shadow: none;
 }
-.pcardstyle:hover {
-  transform: scale(1.05);
-  transition: all 0.5s;
-}
+
 
 .pcardstyle img {
   border-radius: 0;
@@ -759,6 +756,10 @@ body {
 @media screen and (min-width: 900px) {
   .pcardstyle {
     padding: 1em;
+  }
+  .pcardstyle:hover {
+	transform: scale(1.05);
+	transition: all 0.5s;
   }
 }
 /*==================experience section======================*/
