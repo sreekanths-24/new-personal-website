@@ -16,29 +16,21 @@ nav {
   background-color: #00adb5;
   color: #111111;
 }
+/* goto top buttn */
 #myBtn {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Fixed/sticky position */
   bottom: 5px;
-  /* Place the button at the bottom of the page */
   right: 5px;
-  /* Place the button 30px from the right */
   z-index: 10;
-  /* Make sure it does not overlap */
   border: 2px solid #00adb5;
   outline: none;
-  /* Remove outline */
   background-color: #111111;
-  /* Set a background color */
   cursor: pointer;
-  /* Add a mouse pointer on hover */
   padding: 0.5em;
 }
 #myBtn i {
   color: #00adb5;
-  /* Text color */
 }
 /* goto top buttn end */
 a {
@@ -468,6 +460,11 @@ body {
   border-left: 3px solid #00adb5;
   border-right: 3px solid #00adb5;
 }
+article > .main-heading {
+  display: none;
+}
+
+
 @media screen and (min-width: 1300px) {
   .about-me-paragraph {
     transform: translateY(8%);
@@ -475,9 +472,15 @@ body {
   }
 }
 @media screen and (min-width: 900px) {
-  .about-me .main-heading {
-    text-align: right;
-    padding-right: 15%;
+  .about-me > .main-heading {
+    display: none;
+  }
+  article > .main-heading{
+    border: 0;
+    display: block;
+  }
+  img.myaboutimg{
+    transform: translateY(50px);
   }
 }
 @media screen and (max-width: 700px) {
