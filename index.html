@@ -379,164 +379,140 @@
 
       <section id="skills" class="my-skills pt-5 px-3">
         <h1 class="main-heading mt-2 display-5">My Skills</h1>
-        <div class="row" id="skillbody">
-          <div id="specialcase1" class="col-md mt-3 hidden">
-            <div
-              class="card my-3 mx-auto"
-              style="
-                border-radius: 0;
-                background-color: #111111;
-                max-width: 450px;
-                box-shadow: none;
-              "
-            >
-              <div class="skillscards text-center" style="aspect-ratio: 16/9">
+        <div class="blog-card">
+          <div class="meta">
+            <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg)"></div>
+            
+          </div>
+          <div class="description">
+            <h1>Web Development</h1>
+            <h2>Since 2022</h2>
+            <p> 
+              I am actively improving my web development skills through ongoing learning, staying updated on industry trends, and adopting the latest technologies.
+            </p>
+            <p class="read-more">
+              <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Read More</a>
+            </p>
+          </div>
+        </div>
+        <div class="blog-card alt">
+          <div class="meta">
+            <div class="photo" style="background-image: url(https://img.freepik.com/free-vector/online-tutorials-concept_52683-37480.jpg?size=626&ext=jpg&ga=GA1.1.1222169770.1702425600&semt=ais);"></div>
+            
+          </div>
+          <div class="description">
+            <h1>Programing, Data Structures and Algorithms Using Python</h1>
+            <h2>Completed on March 2022</h2>
+            <p>
+              Took this mooc course to enhance my python and DSA skills.
+            </p>
+            <p class="read-more">
+              <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Read More</a>
+            </p>
+          </div>
+        </div>
+        <!-- mooc course Modal -->
+        <div class="modal fade"  id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content" style="background-color: #111111; border: 1px solid #00adb5; border-radius: 0;">
+              <div class="modal-header" style="border: 0;">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Web development Skills</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" >
                 <img
-                  src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white"
-                  alt="HTML5"
-                />
-                <img
-                  src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&amp;logo=css3&amp;logoColor=white"
-                  alt="CSS3"
-                />
-                <img
-                  src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E"
-                  alt="JavaScript"
-                />
-                <img
-                  src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&amp;logo=bootstrap&amp;logoColor=white"
-                  alt="Bootstrap"
-                />
-                <img
-                  src="https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&amp;logo=jquery&amp;logoColor=white"
-                  alt="jQuery"
-                />
-                <img
-                  src="https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&amp;logo=django&amp;logoColor=white"
-                  alt="Django"
-                />
-                <img
-                  src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&amp;logo=python&amp;logoColor=ffdd54"
-                  alt="Python"
-                />
-                <img
-                  src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&amp;logo=mysql&amp;logoColor=white"
-                  alt="MySQL"
-                />
-                <img
-                  src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white"
-                  alt="Vercel"
-                />
-                <img
-                  src="https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&amp;logo=github&amp;logoColor=white"
-                  alt="Github Pages"
-                />
-                <img
-                  src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&amp;logo=netlify&amp;logoColor=#00C7B7"
-                  alt="Netlify"
-                />
-                <img
-                  src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&amp;logo=visual-studio-code&amp;logoColor=white"
-                  alt="Visual Studio Code"
-                />
-                <img
-                  src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&amp;logo=git&amp;logoColor=white"
-                  alt="Git"
-                />
-                <img
-                  src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white"
-                  alt="GitHub"
-                />
-                <img
-                  src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&amp;logo=markdown&amp;logoColor=white"
-                  alt="Markdown"
-                />
-                <img
-                  src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&amp;logo=c&amp;logoColor=white"
-                  alt="C"
-                />
-                <img
-                  src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&amp;logo=python&amp;logoColor=ffdd54"
-                  alt="Python"
-                />
-                <img
-                  src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-                  alt="ReactJs"
-                />
+                src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white"
+                alt="HTML5"
+              />
+              <img
+                src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&amp;logo=css3&amp;logoColor=white"
+                alt="CSS3"
+              />
+              <img
+                src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E"
+                alt="JavaScript"
+              />
+              <img
+                src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&amp;logo=bootstrap&amp;logoColor=white"
+                alt="Bootstrap"
+              />
+              <img
+                src="https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&amp;logo=jquery&amp;logoColor=white"
+                alt="jQuery"
+              />
+              <img
+                src="https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&amp;logo=django&amp;logoColor=white"
+                alt="Django"
+              />
+              <img
+                src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&amp;logo=python&amp;logoColor=ffdd54"
+                alt="Python"
+              />
+              <img
+                src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&amp;logo=mysql&amp;logoColor=white"
+                alt="MySQL"
+              />
+              <img
+                src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white"
+                alt="Vercel"
+              />
+              <img
+                src="https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&amp;logo=github&amp;logoColor=white"
+                alt="Github Pages"
+              />
+              <img
+                src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&amp;logo=netlify&amp;logoColor=#00C7B7"
+                alt="Netlify"
+              />
+              <img
+                src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&amp;logo=visual-studio-code&amp;logoColor=white"
+                alt="Visual Studio Code"
+              />
+              <img
+                src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&amp;logo=git&amp;logoColor=white"
+                alt="Git"
+              />
+              <img
+                src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white"
+                alt="GitHub"
+              />
+              <img
+                src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&amp;logo=markdown&amp;logoColor=white"
+                alt="Markdown"
+              />
+              <img
+                src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&amp;logo=c&amp;logoColor=white"
+                alt="C"
+              />
+              <img
+                src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&amp;logo=python&amp;logoColor=ffdd54"
+                alt="Python"
+              />
+              <img
+                src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                alt="ReactJs"
+              />
 
-                <!-- <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
-                        <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React"> -->
               </div>
-              <div class="card-body">
-                <h1 class="h3" style="color: #8d8d8d">Web Development</h1>
-                <p
-                  class="card-text"
-                  style="min-height: 100px; display: flex; align-items: center"
-                >
-                  I am actively learning and improving my web development
-                  skills.
-                </p>
+              <div class="modal-footer" style="border: 0;">
+                <button type="button" class="know-more-btn know-more-btn-small" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
-          <div class="col-md my-3 first-skill-carm">
-            <div
-              class="card my-3 mx-auto hidden"
-              style="
-                border-radius: 0;
-                background-color: #111111;
-                max-width: 450px;
-                box-shadow: none;
-              "
-            >
-              <img
-                src="./images/PDSA.jpg"
-                class="card-img-top"
-                style="border-radius: 0; aspect-ratio: 16/10"
-                alt="nptel certificate"
-                loading="lazy"
-              />
-              <div class="card-body">
-                <h1 class="h3" style="color: #8d8d8d">MOOC Course | NPTEL</h1>
-                <p
-                  class="card-text"
-                  style="min-height: 100px; display: flex; align-items: center"
-                >
-                  Programing, Data Structures and Algorithms Using Python |
-                  Completed on March 2022
-                </p>
+        </div>
+        <!-- mooc course Modal -->
+        <div class="modal fade"  id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content" style="background-color: #111111; border: 1px solid #00adb5; border-radius: 0;">
+              <div class="modal-header" style="border: 0;">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Programing, Data Structures and Algorithms Using Python | Certificate</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-            </div>
-          </div>
-          <div class="col-md my-3 first-skill-card">
-            <div
-              class="card my-3 mx-auto hidden"
-              style="
-                border-radius: 0;
-                background-color: #111111;
-                max-width: 450px;
-                box-shadow: none;
-              "
-            >
-              <img
-                src="./images/rank.png"
-                class="card-img-top"
-                style="
-                  border-radius: 0;
-                  aspect-ratio: 16/10;
-                  object-fit: contain;
-                "
-                alt="mulearn rank card img"
-                loading="lazy"
-              />
-              <div class="card-body">
-                <h1 class="h3" style="color: #8d8d8d">Gtech Mulearn</h1>
-                <p
-                  class="card-text"
-                  style="min-height: 100px; display: flex; align-items: center"
-                >
-                  I am a member of Gtech Mulearn, a tech community.
-                </p>
+              <div class="modal-body" >
+                <img src="./images/PDSA.jpg" class="card-img" alt="">
+              </div>
+              <div class="modal-footer" style="border: 0;">
+                <button type="button" class="know-more-btn know-more-btn-small" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
