@@ -469,11 +469,9 @@ article > .main-heading {
 .about-me-paragraph p, .about-me-paragraph a, .about-me-paragraph span, .about-me-paragraph i{
   font-size: 1.5vw;
 }
-.about-me-paragraph {
-  padding: 0 2.5em;
+
 }
-}
-@media screen and (min-width: 540px) and (max-width: 768px) {
+@media screen and (min-width: 540px) and (max-width: 767px) {
 
   .about-me-paragraph {
     padding: 0 2.4em;
