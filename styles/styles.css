@@ -464,13 +464,27 @@ article > .main-heading {
   display: none;
 }
 
+@media screen and (min-width: 768px) and (max-width: 900px) {
 
-@media screen and (min-width: 1300px) {
-  .about-me-paragraph {
-    transform: translateY(8%);
-    padding: 0 2.5em;
-  }
+.about-me-paragraph p, .about-me-paragraph a, .about-me-paragraph span, .about-me-paragraph i{
+  font-size: 1.5vw;
 }
+.about-me-paragraph {
+  padding: 0 2.5em;
+}
+}
+@media screen and (min-width: 540px) and (max-width: 768px) {
+
+  .about-me-paragraph {
+    padding: 0 2.4em;
+  }
+  }
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+
+  .about-me-paragraph p, .about-me-paragraph a, .about-me-paragraph span, .about-me-paragraph i{
+    font-size: 1.2vw;
+  }
+  }
 @media screen and (min-width: 900px) {
   .about-me > .main-heading {
     display: none;
@@ -479,13 +493,19 @@ article > .main-heading {
     border: 0;
     display: block;
   }
-  img.myaboutimg{
-    transform: translateY(50px);
-  }
+  
 }
 @media screen and (max-width: 700px) {
   .about-me .about-me-paragraph {
     padding-top: 0.5em;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .about-me-paragraph {
+    padding: 0 2.5em;
+  }
+  img.myaboutimg:hover{
+    transform: scale(1.1);
   }
 }
 /*==================Education section======================*/
