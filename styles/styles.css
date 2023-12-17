@@ -53,6 +53,9 @@ p {
 body {
   background-color: #1f1f1f;
 }
+.bluetext {
+  color: #00adb5;
+}
 /* Style the header: fixed position (always stay at the top) */
 .headerbar {
   position: fixed;
