@@ -818,39 +818,16 @@ article > .main-heading {
 }
 
 /*==================animations section======================*/
-main {
-  overflow-x: hidden;
-}
+
 .hidden {
-  opacity: 0;
-  transform: translateX(10%);
+  /* opacity: 0; */
+  transform: translateY(-10%);
   transition: transform 0.5s ease-in-out;
 }
 
 .show {
-  opacity: 1;
-  transform: translateX(0);
-}
-.my-education .hidden, .my-experience .hidden , .about-me .hidden{
-  opacity: 0;
-  transform: translateY(-10%);
-  transition: transform 0.5s ease-in-out;
-}
-.my-education .show, .my-experience .show, .about-me .show {
-  opacity: 1;
+  /* opacity: 1; */
   transform: translateY(0);
-}
-
-@media screen and (min-width: 900px) {
-  .hidden {
-    opacity: 0;
-    transform: translateY(-10%);
-    transition: transform 0.5s ease-in-out;
-  }
-  .show {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 /*==================dividers section======================*/
 .divider {
