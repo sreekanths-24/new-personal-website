@@ -237,7 +237,14 @@
             >
               <h1 class="main-heading mb-4 display-6">About Me</h1>
               <p class="hidden">
-                Hey there! I'm Sreekanth S, a final-year Computer Science and
+                Hey there! I'm<a
+                href="#"
+                type="button"
+                class="bluetext"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop3"
+                >Sreekanth S</a
+              >, a final-year Computer Science and
                 Engineering student on a journey into the exciting world of
                 tech. I love diving into Full Stack development and exploring
                 the realms of web3 and blockchain. When I'm not coding, you can
@@ -1802,6 +1809,58 @@
       </div>
       <!-- ====================== kerala blasters football club ends ========================= -->
       <!-- ====================== Modals ========================= -->
+      <!-- about me modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop3"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div
+            class="modal-content"
+            style="
+              background-color: #111111;
+              border: 1px solid #00adb5;
+              border-radius: 0;
+            "
+          >
+          <div class="modal-header" style="border: 0">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              My Vision & Mission
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              style="background-color: #00adb5;"
+            ></button>
+          </div>
+            <div class="modal-body">
+              <p>My <span class="bluetext">vision</span> is to evolve into a
+                professional developer, committed to delivering projects within
+                the stipulated timeframe and tailored to user needs. 
+                
+              </p><br><p>My life's <span class="bluetext">mission</span> is to foster a growth
+                mindset, continuously learning and improving to become not just
+                a better developer, but a better human being.</p>
+            </div>
+            <!-- <div class="modal-footer" style="border: 0">
+              <button
+                type="button"
+                class="know-more-btn know-more-btn-small"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div> -->
+          </div>
+        </div>
+      </div>
       <!-- mooc course Modal -->
       <div
         class="modal fade"
