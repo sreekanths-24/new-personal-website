@@ -33,6 +33,8 @@ nav {
   color: #00adb5;
 }
 /* goto top buttn end */
+
+
 a {
   text-decoration: none;
   color: #8d8d8d;
@@ -1012,4 +1014,29 @@ textarea {
   /* We're using the marqueeTwo animation (basically reverse of marqueeOne). */
   /* 10s duration with a linear ease and will repeat infinitely. */
   animation: marqueeTwo 10s linear infinite;
+}
+
+.mycanvasbody{
+  width: min(100%, 800px);
+  margin: 0 auto;
+}
+.mycanvasbody div{
+ text-align: center;
+}
+@media screen and (min-width: 900px) {
+  .mycanvasbody div{
+    padding: 0 5em;
+  }
+  
+}
+.mycanvasbody + div{
+  width: min(100%, 600px);
+  margin: 0 auto;
+}
+.mycanvasbody + div i{
+  font-size: 1.3rem;
+}
+.mycanvasbody div img[class="img-fluid"]{
+  width: min(100%, 600px);
+  margin: 0 auto;
 }
