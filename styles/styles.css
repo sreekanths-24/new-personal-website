@@ -240,9 +240,13 @@ body {
   nav li a {
     color: #8d8d8d;
     letter-spacing: 1px;
-    font-size: 1rem;
+    font-size: 1.2vw;
     font-weight: bold;
     transition: all 0.5s;
+  }
+  nav li a i {
+    font-size: 1.3vw;
+    /* transform: translateY(-2px); */
   }
   nav li a:hover,
   nav li a:focus,
@@ -279,7 +283,7 @@ body {
     justify-content: space-around;
   }
   nav .socials-nav i {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     color: #00adb5;
   }
   nav #togglenav {
@@ -467,11 +471,23 @@ footer .know-more-btn-small {
   border-left: 3px solid #00adb5;
   border-right: 3px solid #00adb5;
 }
+.myaboutimg{
+   max-width:470px;
+
+}
 article > .main-heading {
   display: none;
 }
-
-@media screen and (min-width: 768px) and (max-width: 900px) {
+@media screen and (min-width: 900px) {
+  .about-me > .main-heading {
+    display: none;
+  }
+  article > .main-heading {
+    border: 0;
+    display: block;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 900px) {
   .about-me-paragraph p,
   .about-me-paragraph a,
   .about-me-paragraph span,
@@ -486,21 +502,12 @@ article > .main-heading {
 }
 @media screen and (min-width: 901px) and (max-width: 1300px) {
   .about-me-paragraph p,
-  .about-me-paragraph a,
   .about-me-paragraph span,
   .about-me-paragraph i {
     font-size: 1.2vw;
   }
 }
-@media screen and (min-width: 900px) {
-  .about-me > .main-heading {
-    display: none;
-  }
-  article > .main-heading {
-    border: 0;
-    display: block;
-  }
-}
+
 @media screen and (max-width: 700px) {
   .about-me .about-me-paragraph {
     padding-top: 0.5em;
@@ -508,7 +515,7 @@ article > .main-heading {
 }
 @media screen and (min-width: 1300px) {
   .about-me-paragraph {
-    padding: 0 2em;
+    padding: 0 5em;
   }
   img.myaboutimg:hover {
     transform: scale(1.1);
@@ -532,7 +539,7 @@ article > .main-heading {
 /* Variable Declarations */
 :root {
   --color-white: #111111;
-  --color-prime: #00adbe;
+  --color-prime: #00adb5;
   --color-grey: #e2e2e2;
   --color-grey-dark: #a2a2a2;
 }
@@ -889,10 +896,10 @@ textarea {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 #social-links i {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: #8d8d8d;
 }
 #social-links i:hover {
@@ -906,4 +913,89 @@ textarea {
   #myregard {
     margin-top: 0;
   }
+}
+/* Here we're setting up the animations. */
+/* translate3d takes in 3 arguments (x, y, z) */
+/* In these animations, we're only using the x. */
+
+/* marqueeOne moves from RIGHT to LEFT. */
+@keyframes marqueeOne {
+  0% {
+      transform: translate3d(var(--move-initial), 0, 0);
+  }
+
+  100% {
+      transform: translate3d(var(--move-final), 0, 0);
+  }
+}
+
+/* marqueeTwo moves from LEFT to RIGHT. */
+@keyframes marqueeTwo {
+  0% {
+      transform: translate3d(var(--move-final), 0, 0);
+  }
+
+  100% {
+      transform: translate3d(var(--move-initial), 0, 0);
+  }
+}
+
+.mcontainer {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  place-items: center;
+}
+
+.marquee {
+  position: relative;
+  /* Overflow hidden prevents the div from being scrollable. */
+  overflow: hidden;
+  /* Offset is just the off-screen placement of the marquees. We don't want them dead-center. */
+  --offset: 20vw;
+  /* Adjust "-25%" based on how many spans you have. */
+  /* In our case, "-25%" is ONE span out of FOUR. */
+  /* The -50% is just double that, so when the animation resets, */
+  /* the text will have moved in such a way that one span overlaps the span next to it. */
+  --move-initial: calc(-25% + var(--offset));
+  --move-final: calc(-50% + var(--offset));
+}
+
+.marquee__inner {
+  /* Width of the div is set to FIT its content. */
+  width: fit-content;
+  display: flex;
+  position: relative;
+  /* white-space: nowrap; means on overflow, the text doesn't wrap to the next line. */
+  /* This allows us to have a single line of text, regardless of the font-size. */
+  white-space: nowrap;
+}
+
+.marquee__inner span {
+  /* I chose a font-size of 10vw just because it looks good and adapts to the screen size. */
+  /* I could use clamp() here, but I want the font-size to adapt consistently at every viewport width. */
+  /* If I set a min/max font-size with clamp(), it'll mess up the animation. */
+  font-size: 5vh;
+  padding: 0 2vw;
+  color: #8d8d8d;
+  text-transform: uppercase;
+}
+
+.marquee__inner.first {
+  /* Here our text moves in the x-direction (left/right) based on our variable above. */
+  transform: translate3d(var(--move-initial), 0, 0);
+  /* Here we declare our animation. */
+  /* We're using the marqueeOne animation. */
+  /* 10s duration with a linear ease and will repeat infinitely. */
+  animation: marqueeOne 10s linear infinite;
+}
+
+.marquee__inner.second {
+  /* Here our text moves in the x-direction (left/right) based on our variable above. */
+  /* I'm using the final variable here as this second marquee is the reverse of the first one. */
+  /* Although, when I experimented with this, it didn't seem to matter haha. */
+  transform: translate3d(var(--final-initial), 0, 0);
+  /* We're using the marqueeTwo animation (basically reverse of marqueeOne). */
+  /* 10s duration with a linear ease and will repeat infinitely. */
+  animation: marqueeTwo 10s linear infinite;
 }
