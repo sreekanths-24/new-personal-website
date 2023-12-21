@@ -395,7 +395,7 @@ footer .know-more-btn-small {
   font-weight: bold;
 }
 .heading-div div {
-  height: 50%;
+  height: 40%;
 }
 .heading-div {
   width: 100%;
@@ -420,58 +420,56 @@ footer .know-more-btn-small {
 }
 
 /* ===========floating object animation =========== */
-@keyframes spin {
-  to {
+.bubble {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 50vh;
+  height: 50vh;
+  /* background: linear-gradient(#e66, #99e); */
+  background-color: #1f1f1f;
+  opacity: 0.2;
+  border-radius: 41% 59% 46% 54% / 58% 54% 46% 42%;
+  transform-origin: 30% 30%;
+  transform: rotate(0);
+  animation: 80s linear 0s infinite bmove;
+}
+
+.bubble.type2 {
+  width: 60vh;
+  height: 60vh;
+  /* background: linear-gradient(#d39, #3d9); */
+  background-color: #1f1f1f;
+  border-radius: 53% 47% 58% 42% / 44% 54% 46% 56%;
+  transform-origin: 30% 30%;
+  animation: 60s linear 0s infinite reverse bmove;
+}
+
+.bubble.type3 {
+  width: 70vh;
+  height: 70vh;
+  background-color: #1f1f1f;
+  /* background: linear-gradient(#abf, #d36); */
+  border-radius: 45% 55% 51% 49% / 48% 44% 56% 52% ;
+  transform-origin: 40% 40%;
+  animation: 100s linear 0s infinite bmove;
+}
+
+@keyframes bmove {
+  
+  50% {
+    border-radius: 50%;
+  }
+  
+  100% {
     transform: rotate(1turn);
   }
-}
-
-@keyframes morph {
-  0% {
-    /* background-color: #4854a2; */
-    border-radius: 42% 58% 32% 68% / 65% 33% 67% 35%;
-  }
-  20% {
-    border-radius: 66% 34% 48% 52% / 50% 58% 42% 50%;
-  }
-  50% {
-    border-radius: 56% 44% 44% 56% / 46% 63% 37% 54%;
-  }
-  70% {
-    border-radius: 44% 56% 32% 68% / 65% 33% 67% 35%;
-  }
-  100% {
-    /* background-color: #772088; */
-    border-radius: 65% 33% 67% 35% / 42% 58% 32% 68%;
-  }
-}
-
-.boxbox {
-  position: absolute;
-  /* margin: 150px auto 0; */
-  width: 300px;
-  height: 250px;
-  z-index: 1;
-  background-color: #1f1f1f;
-  border:2px solid #111111;
-  border-radius: 42% 58% 32% 68% / 65% 33% 67% 35%;
-  /* background-image: linear-gradient(45deg, #1f1f1f 0%, #00adb5 100%); */
-  animation: morph 5s linear infinite alternate, spin 15s linear infinite;
-  will-change: border-radius, transform;
-  transform-origin: 40% 30%;
-}
-.boxbox2 {
-  position: absolute;
-  /* margin: 150px auto 0; */
-  width: 300px;
-  height: 250px;
-  z-index: 1;
-  background-color: #1f1f1f;
-  border-radius: 42% 58% 32% 68% / 65% 33% 67% 35%;
-  /* background-image: linear-gradient(45deg, #1f1f1f 0%, #0e666a 100%); */
-  animation: morph 5s linear infinite alternate, spin 15s linear infinite;
-  will-change: border-radius, transform;
-  /* transform-origin: 95.5%; */
+  
 }
 /* ================================wave animation============================= */
 .waves {
