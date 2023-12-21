@@ -36,7 +36,7 @@ nav {
 }
 /* goto top buttn end */
 
-/* ===================================resets================================= */
+/* =================================== custom resets================================= */
 a {
   text-decoration: none;
   color: #8d8d8d;
@@ -78,6 +78,9 @@ p {
 body {
   background-color: #1f1f1f;
 }
+.blueborder {
+  border: 1px solid #00adb5;
+}
 .greytext {
   color: #8d8d8d;
 }
@@ -86,6 +89,12 @@ body {
 }
 .bluetext {
   color: #00adb5;
+}
+.noborder {
+  border: none;
+}
+.noborderradius {
+  border-radius: 0;
 }
 /* ==============================progress bar ============================= */
 /* Style the header: fixed position (always stay at the top) */
