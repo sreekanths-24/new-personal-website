@@ -3,6 +3,8 @@ nav {
   font-family: "Quicksand", sans-serif;
   color: #8d8d8d;
 }
+
+/* ==========================scroll bar styles====================== */
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -16,7 +18,7 @@ nav {
   background-color: #00adb5;
   color: #111111;
 }
-/* goto top buttn */
+/*======================= goto top buttn======================= */
 #myBtn {
   display: none;
   position: fixed;
@@ -34,7 +36,7 @@ nav {
 }
 /* goto top buttn end */
 
-
+/* ===================================resets================================= */
 a {
   text-decoration: none;
   color: #8d8d8d;
@@ -46,6 +48,27 @@ p {
   line-height: 1.5;
   text-align: justify;
 }
+.dflexjbetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dflexjcenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dflexjaround {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.darkbackground {
+  background-color: #111111;
+}
+.lightbackground {
+  background-color: #1f1f1f;
+}
 .card p {
   text-indent: 0;
 }
@@ -55,9 +78,16 @@ p {
 body {
   background-color: #1f1f1f;
 }
+.greytext {
+  color: #8d8d8d;
+}
+.bluebackground{
+  background-color: #00adb5;
+}
 .bluetext {
   color: #00adb5;
 }
+/* ==============================progress bar ============================= */
 /* Style the header: fixed position (always stay at the top) */
 .headerbar {
   position: fixed;
@@ -86,7 +116,7 @@ body {
     transform: translateY(-10%);
   }
 }
-/* Extra small devices (phones, 600px and down) */
+/*=================== Extra small devices (phones, 600px and down)================== */
 #nav-gap {
   height: 3vh;
   min-height: 20px;
@@ -105,7 +135,7 @@ body {
     display: none;
   }
 }
-/*==================nav bar ======================*/
+/*===================================mobile nav bar ======================================*/
 @media screen and (min-width: 250px) and (max-width: 899.5px) {
   nav {
     background-color: #111111;
@@ -187,6 +217,7 @@ body {
     display: none;
   }
 }
+/* ================================extra small device navbar========================== */
 @media screen and (max-width: 330px) {
   nav .logo,
   nav i {
@@ -199,6 +230,7 @@ body {
     border-top-right-radius: 20px;
   }
 }
+/* ===========================latop navbar========================= */
 @media screen and (min-width: 900px) {
   #nav-gap,
   .oeirgoeg,
@@ -376,7 +408,7 @@ footer .know-more-btn-small {
     margin-bottom: -35px;
   }
 }
-/* ========================= */
+/* ================================wave animation============================= */
 .waves {
   position: absolute;
   bottom: 0;
@@ -738,7 +770,7 @@ article > .main-heading {
     transition: all 0.5s;
   }
 }
-/*==================experience section======================*/
+/*===============================experience section======================*/
 .my-experience {
   min-height: fit-content;
   background-color: #1f1f1f;
@@ -754,6 +786,7 @@ article > .main-heading {
     transition: all 0.5s;
   }
 }
+/* =====================timeline code======================================= */
 /* The actual timeline (the vertical ruler) */
 .main-timeline-5 {
   position: relative;
@@ -812,7 +845,7 @@ article > .main-heading {
     max-width: 100%;
   }
 }
-/*==================services section======================*/
+/*=============================services section=================================*/
 .my-services {
   min-height: fit-content;
   background-color: #111111;
@@ -824,58 +857,8 @@ article > .main-heading {
   color: #00adb5;
   transition: all 0.5s;
 }
-/* ================== shadow effect =============== */
-@media screen and (min-width: 900px) {
-  .shadoweffect:hover {
-    -webkit-box-shadow: 0px 0px 100px 10px rgba(0, 173, 181, 0.41);
-    -moz-box-shadow: 0px 0px 100px 10px rgba(0, 173, 181, 0.41);
-    box-shadow: 0px 0px 100px 10px rgba(0, 173, 181, 0.41);
-    z-index: 1;
-  }
-}
-/*==================animations section======================*/
 
-.hidden {
-  /* opacity: 0; */
-  transform: translateY(-10%);
-  transition: transform 0.5s ease-in-out;
-}
-
-.show {
-  /* opacity: 1; */
-  transform: translateY(0);
-}
-/*==================dividers section======================*/
-.divider {
-  background-color: #111111;
-  position: relative;
-  clip-path: polygon(0% 0%, 0% 100%, 100% calc(100% - 5vw), 100% 0%);
-  -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% calc(100% - 5vw), 100% 0%);
-  height: 70px;
-}
-.div2container {
-  height: 70px;
-  background-color: #111111;
-}
-.divider2 {
-  background-color: #1f1f1f;
-  position: relative;
-  clip-path: polygon(0% 0%, 0% 100%, 100% calc(100% - 5vw), 100% 0%);
-  -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% calc(100% - 5vw), 100% 0%);
-  height: 70px;
-}
-@media screen and (min-width: 900px) {
-  .divider {
-    height: 100px;
-  }
-  .div2container {
-    height: 100px;
-  }
-  .divider2 {
-    height: 100px;
-  }
-}
-/*==================footer section======================*/
+/*==============================footer section=====================================*/
 .my-footer {
   min-height: fit-content;
   background-color: #1f1f1f;
@@ -930,6 +913,58 @@ textarea {
     margin-top: 0;
   }
 }
+/* ================== shadow effect =============== */
+@media screen and (min-width: 900px) {
+  .shadoweffect:hover {
+    -webkit-box-shadow: 0px 0px 100px 10px rgba(0, 173, 181, 0.41);
+    -moz-box-shadow: 0px 0px 100px 10px rgba(0, 173, 181, 0.41);
+    box-shadow: 0px 0px 100px 10px rgba(0, 173, 181, 0.41);
+    z-index: 1;
+  }
+}
+/*=================================animations section==================================*/
+
+.hidden {
+  /* opacity: 0; */
+  transform: translateY(-10%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.show {
+  /* opacity: 1; */
+  transform: translateY(0);
+}
+/*================================dividers section================================*/
+.divider {
+  background-color: #111111;
+  position: relative;
+  clip-path: polygon(0% 0%, 0% 100%, 100% calc(100% - 5vw), 100% 0%);
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% calc(100% - 5vw), 100% 0%);
+  height: 70px;
+}
+.div2container {
+  height: 70px;
+  background-color: #111111;
+}
+.divider2 {
+  background-color: #1f1f1f;
+  position: relative;
+  clip-path: polygon(0% 0%, 0% 100%, 100% calc(100% - 5vw), 100% 0%);
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% calc(100% - 5vw), 100% 0%);
+  height: 70px;
+}
+@media screen and (min-width: 900px) {
+  .divider {
+    height: 100px;
+  }
+  .div2container {
+    height: 100px;
+  }
+  .divider2 {
+    height: 100px;
+  }
+}
+/* =====================================marque code =============================== */
 /* Here we're setting up the animations. */
 /* translate3d takes in 3 arguments (x, y, z) */
 /* In these animations, we're only using the x. */
@@ -1015,14 +1050,12 @@ textarea {
   /* 10s duration with a linear ease and will repeat infinitely. */
   animation: marqueeTwo 10s linear infinite;
 }
-
+/* ======================= off cnavas css ================= */
 .mycanvasbody{
   width: min(100%, 800px);
   margin: 0 auto;
 }
-.mycanvasbody div{
- text-align: center;
-}
+
 @media screen and (min-width: 900px) {
   .mycanvasbody div{
     padding: 0 5em;
