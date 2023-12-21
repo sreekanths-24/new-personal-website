@@ -419,58 +419,6 @@ footer .know-more-btn-small {
   }
 }
 
-/* ===========floating object animation =========== */
-.bubble {
-  display: block;
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  width: 50vh;
-  height: 50vh;
-  /* background: linear-gradient(#e66, #99e); */
-  background-color: #434343;
-  opacity: 0.2;
-  border-radius: 41% 59% 46% 54% / 58% 54% 46% 42%;
-  transform-origin: 30% 30%;
-  transform: rotate(0);
-  animation: 80s linear 0s infinite bmove;
-}
-
-.bubble.type2 {
-  width: 60vh;
-  height: 60vh;
-  /* background: linear-gradient(#d39, #3d9); */
-  background-color: #1f1f1f;
-  border-radius: 53% 47% 58% 42% / 44% 54% 46% 56%;
-  transform-origin: 30% 30%;
-  animation: 60s linear 0s infinite reverse bmove;
-}
-
-.bubble.type3 {
-  width: 70vh;
-  height: 70vh;
-  background-color: #1f1f1f;
-  /* background: linear-gradient(#abf, #d36); */
-  border-radius: 45% 55% 51% 49% / 48% 44% 56% 52% ;
-  transform-origin: 40% 40%;
-  animation: 100s linear 0s infinite bmove;
-}
-
-@keyframes bmove {
-  
-  50% {
-    border-radius: 50%;
-  }
-  
-  100% {
-    transform: rotate(1turn);
-  }
-  
-}
 /* ================================wave animation============================= */
 .waves {
   position: absolute;
