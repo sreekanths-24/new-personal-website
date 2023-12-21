@@ -363,3 +363,28 @@ old project section
             </div>
           </div>
         </div>
+
+        <!-- <p class="hidden">
+                Greetings! I'm <span class="bluetext">Sreekanth S</span>, a
+                Final Year Computer Science and Engineering (CSE) Undergraduate
+                Student. My journey in the tech world has been an exciting one.
+                As a self-taught Django Full Stack Developer, I'm dedicated to
+                continually enhancing my skill set by embracing new
+                technologies.
+              </p>
+              <br />
+              <p class="hidden">
+                Beyond web development, I'm fervently passionate about web3 and
+                blockchain technologies. Books are my constant companions,
+                offering a gateway to diverse worlds and knowledge. Music
+                soothes my soul and fuels my creativity.
+              </p>
+              <br />
+              <p class="hidden">
+                My <span class="bluetext">vision</span> is to evolve into a
+                professional developer, committed to delivering projects within
+                the stipulated timeframe and tailored to user needs. My life's
+                <span class="bluetext">mission</span> is to foster a growth
+                mindset, continuously learning and improving to become not just
+                a better developer, but a better human being.
+              </p> -->
