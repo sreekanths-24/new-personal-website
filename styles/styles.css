@@ -517,7 +517,7 @@ footer .know-more-btn-small {
   border-right: 3px solid #00adb5;
 }
 .myaboutimg {
-  max-width: 470px;
+  max-width: min(80%, 470px);
 }
 article > .main-heading {
   display: none;
