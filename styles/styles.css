@@ -58,6 +58,11 @@ p {
   align-items: center;
   justify-content: center;
 }
+.dflexjaligncenter {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .dflexjaround {
   display: flex;
   align-items: center;
@@ -84,7 +89,7 @@ body {
 .greytext {
   color: #8d8d8d;
 }
-.bluebackground{
+.bluebackground {
   background-color: #00adb5;
 }
 .bluetext {
@@ -1063,26 +1068,24 @@ textarea {
   animation: marqueeTwo 10s linear infinite;
 }
 /* ======================= off cnavas css ================= */
-.mycanvasbody{
+.mycanvasbody {
   width: min(100%, 800px);
   margin: 0 auto;
 }
 
 @media screen and (min-width: 900px) {
-  .mycanvasbody div{
+  .mycanvasbody div {
     padding: 0 5em;
   }
-  
 }
-.mycanvasbody + div{
+.mycanvasbody + div {
   width: min(100%, 600px);
   margin: 0 auto;
 }
-.mycanvasbody + div i{
+.mycanvasbody + div i {
   font-size: 1.3rem;
 }
-.mycanvasbody div img[class="img-fluid"]{
+.mycanvasbody div img[class="img-fluid"] {
   width: min(100%, 600px);
   margin: 0 auto;
 }
-
