@@ -517,7 +517,7 @@ footer .know-more-btn-small {
   border-right: 3px solid #00adb5;
 }
 .myaboutimg {
-  max-width: min(80%, 470px);
+  max-width: 470px;
 }
 article > .main-heading {
   display: none;
@@ -539,7 +539,7 @@ article > .main-heading {
     font-size: 1.5vw;
   }
 }
-@media screen and (min-width: 540px) and (max-width: 767px) {
+@media screen and (min-width: 540px) and (max-width: 899.5px) {
   .about-me-paragraph {
     padding: 0 2.4em;
   }
@@ -547,8 +547,9 @@ article > .main-heading {
 @media screen and (min-width: 901px) and (max-width: 1300px) {
   .about-me-paragraph p,
   .about-me-paragraph span,
+  .about-me-paragraph a,
   .about-me-paragraph i {
-    font-size: 1.2vw;
+    font-size: 1.5vw;
   }
 }
 
