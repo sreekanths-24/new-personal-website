@@ -349,10 +349,11 @@ body {
 /*==================nav bar ends======================*/
 /*==================Button section======================*/
 .know-more-btn {
-  padding: 0.5em 1em;
+  padding: 0.7em 1.25em;
   font-size: 1.4rem;
   color: #00adb5;
-  border: 2px solid currentColor;
+  border: 3px solid currentColor;
+  border-radius: 50px;
   width: max-content;
   background-color: transparent;
   transition: all 1s;
