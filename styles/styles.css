@@ -885,7 +885,7 @@ article > .main-heading {
 /*=============================services section=================================*/
 .my-services {
   min-height: fit-content;
-  background-color: #111111;
+  background-color: #1f1f1f;
 }
 .hire-icon {
   color: #393e46;
@@ -898,7 +898,7 @@ article > .main-heading {
 /*==============================footer section=====================================*/
 .my-footer {
   min-height: fit-content;
-  background-color: #1f1f1f;
+  background-color: #111111;
 }
 /* Disable outline and borders for input fields */
 input[type="text"],
@@ -907,7 +907,7 @@ input[type="tel"],
 textarea {
   border: none;
   outline: none;
-  background-color: #111111;
+  background-color: #1f1f1f;
   color: #8d8d8d;
   font-weight: bold;
 }
