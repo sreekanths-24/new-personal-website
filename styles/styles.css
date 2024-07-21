@@ -29,10 +29,7 @@ nav {
   background-color: #00adb5;
   color: #111;
 }
-#myBtn,
-.darkbackground {
-  background-color: #111;
-}
+
 #myBtn {
   display: none;
   bottom: 5px;
@@ -81,10 +78,7 @@ p {
   align-items: center;
   justify-content: space-around;
 }
-.lightbackground,
-body {
-  background-color: #1f1f1f;
-}
+
 .card p {
   text-indent: 0;
 }
@@ -446,9 +440,11 @@ footer .know-more-btn-small {
     transform: translate(-50%, -75%) rotate(360deg);
   }
 }
+
 .about-me,
 
-.my-services {
+.my-services,
+.my-skills {
   min-height: fit-content;
   background-color: #1f1f1f;
 }
@@ -499,10 +495,10 @@ article > .main-heading {
     transform: scale(1.1);
   }
 }
-.my-education,
 .my-footer,
-.my-experience,
-.my-skills {
+.my-education,
+.my-portfolio,
+.my-experience {
   min-height: fit-content;
   background-color: #111;
 }
@@ -515,7 +511,7 @@ article > .main-heading {
 }
 
 :root {
-  --color-white: #111111;
+  --color-white: #1f1f1f;
   --color-prime: #00adb5;
   --color-grey: #e2e2e2;
   --color-grey-dark: #a2a2a2;
@@ -811,37 +807,7 @@ textarea {
     transform: translate3d(var(--move-initial), 0, 0);
   }
 }
-.mcontainer {
-  width: 100%;
-  height: 10vh;
-  display: flex;
-  place-items: center;
-}
-.marquee {
-  overflow: hidden;
-  --offset: 20vw;
-  --move-initial: calc(-25% + var(--offset));
-  --move-final: calc(-50% + var(--offset));
-}
-.marquee__inner {
-  width: fit-content;
-  display: flex;
-  white-space: nowrap;
-}
-.marquee__inner span {
-  font-size: 5vh;
-  padding: 0 2vw;
-  color: #8d8d8d;
-  text-transform: uppercase;
-}
-.marquee__inner.first {
-  transform: translate3d(var(--move-initial), 0, 0);
-  animation: 10s linear infinite marqueeOne;
-}
-.marquee__inner.second {
-  transform: translate3d(var(--final-initial), 0, 0);
-  animation: 10s linear infinite marqueeTwo;
-}
+
 .mycanvasbody {
   width: min(100%, 800px);
   margin: 0 auto;
@@ -908,4 +874,11 @@ textarea {
 }
 .mycanvasbody + div i {
   font-size: 1.3rem;
+}
+.lightbackground,
+body {
+  background-color: #1f1f1f;
+}#myBtn,
+.darkbackground {
+  background-color: #111;
 }
