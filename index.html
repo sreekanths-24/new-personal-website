@@ -114,7 +114,7 @@
           >
         </li>
         <li>
-          <a href="./personal.html#skills"
+          <a href="#skills"
             ><i class="fa-solid fa-laptop-code"></i> MY SKILLS</a
           >
         </li>
@@ -124,7 +124,7 @@
           >
         </li>
         <li>
-          <a href="./personal.html#experience"
+          <a href="#experience"
             ><i class="fa-solid fa-computer"></i> EXPERIENCE</a
           >
         </li>
@@ -134,7 +134,7 @@
           >
         </li>
         <li>
-          <a href="#contact-me"><i class="fa-solid fa-phone"></i> CONTACT ME</a>
+          <a href="#contact-me"><i class="fa-solid fa-phone"></i> HIRE ME</a>
         </li>
       </ul>
 
@@ -230,14 +230,14 @@
                   data-bs-toggle="modal"
                   data-bs-target="#staticBackdrop3"
                   >Sreekanth S</a
-                >, a Computer Science Engineer on a
-                journey into the exciting world of tech and business. I love diving into Full
-                Stack development and exploring the realms of business and
-                marketing. When I'm not coding, you can find me lost in books
-                or jamming to music for that extra burst of creativity. My goal?
-                To be a friendly developer who not only meets project deadlines
-                but also keeps growing as a person. Let's make cool stuff
-                together! Checkout my work by scrolling down below.
+                >, a Computer Science Engineer on a journey into the exciting
+                world of tech and business. I love diving into Full Stack
+                development and exploring the realms of business and marketing.
+                When I'm not coding, you can find me lost in books or jamming to
+                music for that extra burst of creativity. My goal? To be a
+                friendly developer who not only meets project deadlines but also
+                keeps growing as a person. Let's make cool stuff together!
+                Checkout my work by scrolling down below.
               </p>
 
               <br />
@@ -284,265 +284,181 @@
       </svg>
       <!--==         Education section         ==-->
 
+      <section id="skills" class="my-skills pt-5 px-3">
+        <h2 class="main-heading display-5 text-center">My Skills</h2>
+        <br />
+        <div class="px-md-5 d-flex flex-wrap justify-content-center">
+          <!-- Skill cards will be dynamically added here -->
+        </div>
+        <br />
+        <div class="mt-3 d-flex justify-content-center">
+          <a href="https://twitter.com/IAmSreekanthS/" class="know-more-btn" target="_blank" rel="noopener noreferrer">Go To <i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </section>
       
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          fetch('skills.json')
+            .then(response => response.json())
+            .then(data => {
+              const skillsContainer = document.querySelector('.px-md-5');
+      
+              data.forEach(skill => {
+                const skillCard = document.createElement('div');
+                skillCard.className = 'card skill-card m-3';
+      
+                const img = document.createElement('img');
+                img.src = skill.image;
+                img.alt = skill.title;
+                img.className = 'card-img-top';
+      
+                const cardBody = document.createElement('div');
+                cardBody.className = 'card-body';
+      
+                const cardTitle = document.createElement('h5');
+                cardTitle.className = 'card-title';
+                cardTitle.textContent = skill.title;
+      
+                cardBody.appendChild(cardTitle);
+                skillCard.appendChild(img);
+                skillCard.appendChild(cardBody);
+      
+                skillsContainer.appendChild(skillCard);
+              });
+            })
+            .catch(error => console.error('Error fetching the skills data:', error));
+        });
+      </script>
+      
+      <style>
+      /* Skills Section */  
+      .skill-card {
+        width: 150px;
+        background-color: #2a2a2a;
+        border: none;
+        transition: all 0.5s ease;
+      }
+      @media screen and (max-width: 500px) {
+        .skill-card {
+          width: 120px;
+        }
+      }
+      .skill-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      .skill-card .card-img-top {
+        width: 100%;
+        height: 100px;
+        object-fit: contain;
+        padding: 10px;
+        background-color: #fff;
+      }
+      
+      .skill-card .card-title {
+        text-align: center;
+        color: #00adb5;
+        font-size: 1rem;
+        margin-top: 10px;
+      }
+      </style>
+      
+      <svg
+        class="separator lightbackground"
+        xmlns="http://www.w3.org/2000/svg"
+        width="100%"
+        height="45"
+        viewBox="0 0 200 19"
+        preserveAspectRatio="none"
+      >
+        <g transform="translate(-0.21755166,-100.15454)">
+          <path
+            style="fill: #111111"
+            d="M 0.2688579,100.29477 H 200.98548 c 0,0 -99.37375,39.84098 -200.7166221,0 z"
+          />
+        </g>
+      </svg>
+
       <section id="portfolio" class="my-portfolio pt-5 px-3">
         <h2 class="main-heading mt-2 display-5">My Creative Portfolio</h2>
         <br />
         <div class="row">
-          <!-- <div class="col-md col-sm-6">
-            <div class="card my-3 mx-auto hidden pcardstyle">
-              <img
-                src="./images/npw.png"
-                class="card-img-top"
-                alt="College img"
-              />
-              <div class="card-body px-0">
-                <h3 class="card-title my-2 h3 fw-bold greytext">
-                  My Portfolio Website
-                </h3>
-                <p class="card-text">
-                  The website you are looking at right now.
-                </p>
-                <a
-                  href="https://github.com/sreekanths-24/new-personal-website"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="plinks d-block py-1"
-                  >See the source code
-                  <i class="fa-solid fa-arrow-right-long"></i
-                ></a>
-                <a href="#about" class="plinks d-block py-1"
-                  >Live view <i class="fa-solid fa-arrow-right-long"></i
-                ></a>
-              </div>
-            </div>
-          </div> -->
-          <div class="col-md col-sm-6">
-            <div class="card my-3 mx-auto pcardstyle hidden">
-              <a
-                href="https://saaya23.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="./images/saaya23.png"
-                  class="card-img-top"
-                  alt="College img"
-                />
-              </a>
-              <div class="card-body px-0">
-                <h3 class="card-title my-2 h3 fw-bold greytext">
-                  Saaya23 Website
-                </h3>
-                <p class="card-text">
-                  Collaborated in the development of my college's cultural fest
-                  website.
-                </p>
-                <!-- <a
-                  href="https://github.com/Sree077/Saaya2k23"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="plinks d-block py-1"
-                  >See the source code
-                  <i class="fa-solid fa-arrow-right-long"></i
-                ></a> -->
-                <a
-                  class="plinks d-block py-3"
-                  data-bs-toggle="offcanvas"
-                  href="#offcanvassaaya23"
-                  role="button"
-                  aria-controls="offcanvasExample"
-                >
-                  Read More <i class="fa-solid fa-arrow-right-long"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md col-sm-6">
-            <div class="card my-3 mx-auto hidden pcardstyle">
-              <a
-                href="https://kbfc.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="./images/kbfc.png"
-                  class="card-img-top"
-                  alt="College img"
-                />
-              </a>
-              <div class="card-body px-0">
-                <h3 class="card-title my-2 h3 fw-bold greytext">
-                  Kerala Blasters FC
-                </h3>
-                <p class="card-text">
-                  A website that I build for KBFC as part of web for team
-                  program conducted by MuLearn AWH and IEDC AWH.
-                </p>
-                <!-- <a
-                  href="https://github.com/sreekanths-24/KBFC"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="plinks d-block py-1"
-                  >See the source code
-                  <i class="fa-solid fa-arrow-right-long"></i
-                ></a> -->
-                <a
-                  class="plinks d-block py-3"
-                  data-bs-toggle="offcanvas"
-                  href="#offcanvaskbfc"
-                  role="button"
-                  aria-controls="offcanvasExample"
-                >
-                  Read More <i class="fa-solid fa-arrow-right-long"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md col-sm-6">
-            <div class="card my-3 mx-auto pcardstyle hidden">
-              <a
-                href="https://www.kalharaconcepts.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="./images/kalharaconcepts.png"
-                  class="card-img-top"
-                  alt="College img"
-                />
-              </a>
-              <div class="card-body px-0">
-                <h3 class="card-title my-2 h3 fw-bold greytext">
-                  Kalhara Concepts PVT LTD
-                </h3>
-                <p class="card-text">
-                  Developed a portfolio website for Kalhara Concepts PVT LTD, a startup construction company.
-                </p>
-                <!-- <a
-                  href="https://github.com/Sree077/Saaya2k23"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="plinks d-block py-1"
-                  >See the source code
-                  <i class="fa-solid fa-arrow-right-long"></i
-                ></a> -->
-                <a
-                  class="plinks d-block py-3"
-                  data-bs-toggle="offcanvas"
-                  href="#offcanvaskalharaconcepts"
-                  role="button"
-                  aria-controls="offcanvasExample"
-                >
-                  Read More <i class="fa-solid fa-arrow-right-long"></i>
-                </a>
-              </div>
-            </div>
-          </div>
+          <!-- Portfolio cards will be dynamically added here -->
         </div>
-        <div class="row">
-          <div class="col-md col-sm-6">
-            <div class="card my-3 mx-auto pcardstyle hidden">
-              <a
-                href="https://www.allinoneshoppe.com/shop/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="./images/allinoneshoppe.png"
-                  class="card-img-top"
-                  alt="College img"
-                />
-              </a>
-              <div class="card-body px-0">
-                <h3 class="card-title my-2 h3 fw-bold greytext">
-                  All In One Shoppe
-                </h3>
-                <p class="card-text">
-                  Developed an e-commerce website for All In One Shoppe, a retail business.
-                </p>
-                <!-- <a
-                  href="https://github.com/Sree077/Saaya2k23"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="plinks d-block py-1"
-                  >See the source code
-                  <i class="fa-solid fa-arrow-right-long"></i
-                ></a> -->
-                <a
-                  class="plinks d-block py-3"
-                  data-bs-toggle="offcanvas"
-                  href="#offcanvasallinoneshoppe"
-                  role="button"
-                  aria-controls="offcanvasExample"
-                >
-                  Read More <i class="fa-solid fa-arrow-right-long"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md col-sm-6">
-            <div class="card my-3 mx-auto pcardstyle hidden">
-              <a
-                href="https://athma23.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="./images/athma-min.png"
-                  class="card-img-top"
-                  alt="College img"
-                />
-              </a>
-              <div class="card-body px-0">
-                <h3 class="card-title my-2 h3 fw-bold greytext">
-                  Athma23 Website
-                </h3>
-                <p class="card-text">
-                  Collaborated in the development of my college's tech fest
-                  website.
-                </p>
-                <!-- <a
-                  href="https://github.com/arfazkhan/ATHMA-23"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="plinks d-block py-1"
-                  >See the source code
-                  <i class="fa-solid fa-arrow-right-long"></i
-                ></a> -->
-                <a
-                  class="plinks d-block py-3"
-                  data-bs-toggle="offcanvas"
-                  href="#offcanvasathma23"
-                  role="button"
-                  aria-controls="offcanvasExample"
-                >
-                  Read More <i class="fa-solid fa-arrow-right-long"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md col-sm-6">
-          
-          </div>
-        </div>
-
+        <br />
         <div class="mt-3 d-flex justify-content-center">
           <div class="my-4 d-flex justify-content-center">
-            <a
-              href="https://github.com/sreekanths-24/"
-              class="know-more-btn"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Go To <i class="fa-brands fa-github"></i
-            ></a>
+            <a href="https://github.com/sreekanths-24/" class="know-more-btn" target="_blank" rel="noopener noreferrer">
+              Go To <i class="fa-brands fa-github"></i>
+            </a>
           </div>
         </div>
       </section>
+      
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          fetch('portfolio.json')
+            .then(response => response.json())
+            .then(data => {
+              const portfolioContainer = document.querySelector('.my-portfolio .row');
+      
+              data.forEach(item => {
+                const colDiv = document.createElement('div');
+                colDiv.className = 'col-md-4 col-sm-6';
+      
+                const cardDiv = document.createElement('div');
+                cardDiv.className = 'card my-3 mx-auto pcardstyle';
+      
+                const link = document.createElement('a');
+                link.href = item.link;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+      
+                const img = document.createElement('img');
+                img.src = item.image;
+                img.alt = item.alt;
+                img.className = 'card-img-top';
+      
+                link.appendChild(img);
+      
+                const cardBody = document.createElement('div');
+                cardBody.className = 'card-body px-0';
+      
+                const cardTitle = document.createElement('h3');
+                cardTitle.className = 'card-title my-2 h3 fw-bold greytext';
+                cardTitle.textContent = item.title;
+      
+                const cardText = document.createElement('p');
+                cardText.className = 'card-text';
+                cardText.textContent = item.description;
+      
+                const readMoreLink = document.createElement('a');
+                readMoreLink.className = 'plinks d-block py-3';
+                readMoreLink.dataset.bsToggle = 'offcanvas';
+                readMoreLink.href = item.readMoreLink;
+                readMoreLink.role = 'button';
+                readMoreLink.ariaControls = 'offcanvasExample';
+                readMoreLink.innerHTML = 'Read More <i class="fa-solid fa-arrow-right-long"></i>';
+      
+                cardBody.appendChild(cardTitle);
+                cardBody.appendChild(cardText);
+                cardBody.appendChild(readMoreLink);
+      
+                cardDiv.appendChild(link);
+                cardDiv.appendChild(cardBody);
+      
+                colDiv.appendChild(cardDiv);
+                portfolioContainer.appendChild(colDiv);
+              });
+            })
+            .catch(error => console.error('Error fetching the portfolio data:', error));
+        });
+      </script>
+      
       <!--==         divider         ==-->
 
       <svg
-        class="separator"
+        class="separator darkbackground"
         xmlns="http://www.w3.org/2000/svg"
         width="100%"
         height="80"
@@ -555,14 +471,89 @@
             d="m 14.74107,115.49581 h 178.02679 v 30.61607 h -29.10417 v -12.47321 h -10.58333 v -8.31548 h -13.98512 v 13.98512 h -20.41072 v -13.98512 h -8.31547 v 7.18155 h -7.18155 v 10.9613 H 85.422617 v -10.9613 H 68.791666 V 121.54343 H 51.40476 v 15.875 H 29.860117 v -9.82739 h -8.693452 v -7.55952 h -6.520089 v -4.53571 z"
           />
           <path
-            style="fill: #111111"
+            style="fill: #1f1f1f"
             d="M 14.741071,112.54762 H 192.76786 v 30.61607 H 163.66369 V 130.69048 H 153.08036 V 122.375 h -13.98512 v 13.98512 H 118.68452 V 122.375 h -8.31547 v 7.18155 h -7.18155 v 10.9613 H 85.422617 v -10.9613 H 68.791666 V 118.59524 H 51.40476 v 15.875 H 29.860118 v -9.82739 h -8.693452 v -7.55952 h -6.520089 v -4.53571 z"
           />
         </g>
       </svg>
 
-      <!--==         Experience section         ==-->
+<!--== Experience section ==-->
+<section id="experience" class="my-experience pt-5 px-3">
+  <h2 class="main-heading mt-2 display-5 text-center">My Journey in Tech</h2>
+  <br />
+  <section class="gradient-custom-5">
+    <div class="container py-5">
+      <div class="main-timeline-5">
+        <!-- Experience cards will be dynamically added here -->
+      </div>
+    </div>
+  </section>
+  <div class="d-flex justify-content-center">
+    <a href="https://www.linkedin.com/in/sreekanth-s-663418232" target="_blank" rel="noopener noreferrer" class="know-more-btn">
+      Go To <i class="fa-brands fa-linkedin"></i>
+    </a>
+  </div>
+</section>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    fetch('experience.json')
+      .then(response => response.json())
+      .then(data => {
+        const timelineContainer = document.querySelector('.main-timeline-5');
+
+        data.forEach(item => {
+          const timelineDiv = document.createElement('div');
+          timelineDiv.className = 'timeline-5 right-5';
+
+          const cardDiv = document.createElement('div');
+          cardDiv.className = 'card hovereffect lightbackground';
+
+          const cardBody = document.createElement('div');
+          cardBody.className = 'card-body';
+
+          const cardTitle = document.createElement('h5');
+          cardTitle.className = 'h3 fw-bold greytext';
+          cardTitle.textContent = item.title;
+
+          const timeSpan = document.createElement('span');
+          timeSpan.className = 'small greytext';
+          timeSpan.innerHTML = `<i class="fas fa-clock me-1"></i>${item.time}`;
+
+          const cardText = document.createElement('p');
+          cardText.className = 'mt-2 mb-0 exp-para';
+          cardText.innerHTML = item.description;
+
+          cardBody.appendChild(cardTitle);
+          cardBody.appendChild(timeSpan);
+          cardBody.appendChild(cardText);
+
+          cardDiv.appendChild(cardBody);
+
+          timelineDiv.appendChild(cardDiv);
+          timelineContainer.appendChild(timelineDiv);
+        });
+      })
+      .catch(error => console.error('Error fetching the experience data:', error));
+  });
+</script>
+
+      <!--==         divider         ==-->
+      <svg
+        class="separator"
+        xmlns="http://www.w3.org/2000/svg"
+        width="100%"
+        height="70"
+        viewBox="0 0 176 30"
+        preserveAspectRatio="none"
+      >
+        <g transform="translate(-13.668562,-111.38266)">
+          <path
+            style="fill: #111111"
+            d="M 13.898015,111.51495 H 190.83044 v 26.19241 l -45.97036,-14.43255 -42.22858,7.48354 -45.970361,-14.96709 -31.003265,16.03617 z"
+          />
+        </g>
+      </svg>
       <!--==         service section         ==-->
 
       <section id="services" class="my-services pt-5 px-3 lightbackground">
@@ -639,43 +630,27 @@
 
       <!--==         divider         ==-->
       <svg
-      class="separator darkbackground"
-      xmlns="http://www.w3.org/2000/svg"
-      width="100%"
-      height="70"
-      viewBox="0 0 176 30"
-      preserveAspectRatio="none"
-    >
-      <g transform="translate(-13.668562,-111.38266)">
-        <path
-          style="fill: #1f1f1f"
-          d="M 13.898015,111.51495 H 190.83044 v 26.19241 l -45.97036,-14.43255 -42.22858,7.48354 -45.970361,-14.96709 -31.003265,16.03617 z"
-        />
-      </g>
-    </svg>
-      <!-- <div class="mcontainer pt-5" style="background-color: #1f1f1f;">
-        <div class="marquee">
-            <div class="marquee__inner first" style="background-color: #1f1f1f;">
-              <span>thank you for visiting.</span>
-              <span>have a nice day.</span>
-              <span>thank you for visiting.</span>
-              <span>have a nice day.</span>
-            </div>
-            <div class="marquee__inner second" style="background-color: #1f1f1f;">
-              <span>thank you for visiting.</span>
-              <span>have a nice day.</span>
-              <span>thank you for visiting.</span>
-              <span>have a nice day.</span>
-            </div>
-        </div>
-    </div> -->
+        class="separator darkbackground"
+        xmlns="http://www.w3.org/2000/svg"
+        width="100%"
+        height="70"
+        viewBox="0 0 176 30"
+        preserveAspectRatio="none"
+      >
+        <g transform="translate(-13.668562,-111.38266)">
+          <path
+            style="fill: #1f1f1f"
+            d="M 13.898015,111.51495 H 190.83044 v 26.19241 l -45.97036,-14.43255 -42.22858,7.48354 -45.970361,-14.96709 -31.003265,16.03617 z"
+          />
+        </g>
+      </svg>
       <!--==         footer section         ==-->
 
       <footer id="contact-me" class="my-footer pt-5 px-3">
         <div class="row">
           <div class="col-md px-sm-5 px-md-3 px-xl-5 py-3">
             <h2 class="h4" style="font-weight: bold">
-              Contact Me
+              Hire Me
               <i
                 class="fa-solid fa-paper-plane bluetext"
                 style="font-size: 1.3rem"
@@ -758,7 +733,9 @@
                   >
                 </li>
                 <li class="py-1">
-                  <a href="./personal.html#skills"><i class="fa-solid fa-link"></i> SKILLS</a>
+                  <a href="#skills"
+                    ><i class="fa-solid fa-link"></i> SKILLS</a
+                  >
                 </li>
                 <li class="py-1">
                   <a href="#portfolio"
@@ -766,7 +743,7 @@
                   >
                 </li>
                 <li class="py-1">
-                  <a href="./personal.html#experience"
+                  <a href="#experience"
                     ><i class="fa-solid fa-link"></i> EXPERIENCE</a
                   >
                 </li>
@@ -1055,7 +1032,7 @@
       >
         <div class="offcanvas-header">
           <h5 class="offcanvas-title h3 fw-bold" id="offcanvasExampleLabel">
-            All in one shoppe 
+            All in one shoppe
           </h5>
           <button
             type="button"
@@ -1073,7 +1050,13 @@
             />
             <h4 class="h4 fw-bold pt-3">All in one shoppe</h4>
             <p class="pb-4 pt-3">
- Our team spearheaded the development of an e-commerce platform for our esteemed client. This bespoke platform has significantly bolstered his online presence, providing a robust digital storefront for the seamless sale of his diverse product range. Through meticulous design and implementation, our solution empowers our client to effectively showcase his offerings and engage with customers in the dynamic online marketplace.
+              Our team spearheaded the development of an e-commerce platform for
+              our esteemed client. This bespoke platform has significantly
+              bolstered his online presence, providing a robust digital
+              storefront for the seamless sale of his diverse product range.
+              Through meticulous design and implementation, our solution
+              empowers our client to effectively showcase his offerings and
+              engage with customers in the dynamic online marketplace.
             </p>
             <div class="px-0">
               <h4 class="h4 fw-bold">Technologies Used</h4>
@@ -1147,7 +1130,14 @@
             />
             <h4 class="h4 fw-bold pt-3">Kalhara Concepts</h4>
             <p class="pb-4 pt-3">
-              My colleague and I collaborated on the development of a portfolio website for Kalhara Concepts Pvt Ltd, a burgeoning construction startup. This initiative played a pivotal role in establishing our client's online footprint, providing a dynamic platform to showcase their comprehensive suite of services. By leveraging our expertise, we enabled Kalhara Concepts to effectively communicate their unique value proposition and expertise to potential clients, fostering enhanced visibility and credibility within the industry. 
+              My colleague and I collaborated on the development of a portfolio
+              website for Kalhara Concepts Pvt Ltd, a burgeoning construction
+              startup. This initiative played a pivotal role in establishing our
+              client's online footprint, providing a dynamic platform to
+              showcase their comprehensive suite of services. By leveraging our
+              expertise, we enabled Kalhara Concepts to effectively communicate
+              their unique value proposition and expertise to potential clients,
+              fostering enhanced visibility and credibility within the industry.
             </p>
             <div class="px-0">
               <h4 class="h4 fw-bold">Technologies Used</h4>
@@ -1167,7 +1157,6 @@
                 src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&amp;logo=bootstrap&amp;logoColor=white"
                 alt="Bootstrap"
               />
-              
             </div>
           </div>
         </div>

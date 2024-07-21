@@ -1,0 +1,13 @@
+[
+    {
+      "title": "Freelancing Projects",
+      "time": "August 2023 to March 2024",
+      "description": "I have worked on several freelancing projects, developing websites for clients and enhancing my skills in HTML, CSS, JavaScript, and Bootstrap. These projects provided opportunities to understand client requirements and deliver quality websites. Here are some of the websites I worked on: <a class=\"bluetext\" data-bs-toggle=\"offcanvas\" href=\"#offcanvaskalharaconcepts\" role=\"button\" aria-controls=\"offcanvasExample\">Kalharaconcepts PVT LTD</a>, <a class=\"bluetext\" data-bs-toggle=\"offcanvas\" href=\"#offcanvasallinoneshoppe\" role=\"button\" aria-controls=\"offcanvasExample\">All In One Shoppe</a>, <a class=\"bluetext\" data-bs-toggle=\"offcanvas\" href=\"#offcanvasathma23\" role=\"button\" aria-controls=\"offcanvasExample\">Athma 2023</a>. I also conducted seminars to share my knowledge: <a class=\"bluetext\" data-bs-toggle=\"offcanvas\" href=\"#offcanvaswebdesign\" role=\"button\" aria-controls=\"offcanvasExample\">Webinar About Web Design</a> and <a href=\"https://www.linkedin.com/posts/iamsreekanths_i-am-soo-happy-that-i-got-the-opportunity-activity-7029367624807444480-PEy4?utm_source=share&utm_medium=member_android\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"bluetext\">Introduction to Git and GitHub.</a>"
+    },
+    {
+      "title": "Associate Software Engineer",
+      "time": "August 2023 to March 2024",
+      "description": "I am currently working as an Associate Software Engineer at <a href=\"https://trogonmedia.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"bluetext\">Trogon Media PVT Ltd</a>. In this role, I have been involved in various software development projects, focusing on creating scalable and efficient web applications. My responsibilities include collaborating with cross-functional teams, implementing new features, and optimizing existing codebases."
+    }
+  ]
+  

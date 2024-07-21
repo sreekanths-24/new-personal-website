@@ -1,0 +1,71 @@
+[
+    {
+      "image": "./images/skills/html5.png",
+      "title": "HTML5"
+    },
+    {
+      "image": "./images/skills/css3.png",
+      "title": "CSS3"
+    },
+    {
+      "image": "./images/skills/js.png",
+      "title": "JavaScript"
+    },
+    {
+      "image": "./images/skills/bootstrap5.png",
+      "title": "Bootstrap"
+    },
+    {
+      "image": "./images/skills/markdown.png",
+      "title": "Markdown"
+    },
+    {
+      "image": "./images/skills/git-vcs.png",
+      "title": "Git"
+    },
+    {
+      "image": "./images/skills/github-2.png",
+      "title": "Github"
+    },
+    {
+      "image": "./images/skills/chatgpt.png",
+      "title": "Chatgpt"
+    },
+    {
+      "image": "./images/skills/php.png",
+      "title": "PHP"
+    },
+    {
+      "image": "./images/skills/sql.png",
+      "title": "SQL"
+    },
+    {
+      "image": "./images/skills/codeignitor.png",
+      "title": "CodeIgniter 4"
+    },
+    
+    {
+      "image": "./images/skills/python3-2.png",
+      "title": "Python 3"
+    },
+    
+    {
+      "image": "./images/skills/django.png",
+      "title": "Django"
+    },
+    {
+      "image": "./images/skills/jquery.png",
+      "title": "Jquery"
+    },
+    {
+      "image": "./images/skills/vscode.png",
+      "title": "VS Code"
+    },
+    {
+      "image": "./images/skills/netlify.png",
+      "title": "Netlify"
+    }
+
+    
+  ]
+  

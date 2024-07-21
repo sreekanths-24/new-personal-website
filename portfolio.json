@@ -1,0 +1,43 @@
+[
+    {
+      "image": "./images/saaya23.png",
+      "alt": "Saaya23 Website",
+      "title": "Saaya23 Website",
+      "description": "Collaborated in the development of my college's cultural fest website.",
+      "link": "https://saaya23.netlify.app/",
+      "readMoreLink": "#offcanvassaaya23"
+    },
+    {
+      "image": "./images/kbfc.png",
+      "alt": "Kerala Blasters FC",
+      "title": "Kerala Blasters FC",
+      "description": "A website that I built for KBFC as part of the web for team program conducted by MuLearn AWH and IEDC AWH.",
+      "link": "https://kbfc.netlify.app/",
+      "readMoreLink": "#offcanvaskbfc"
+    },
+    {
+      "image": "./images/kalharaconcepts.png",
+      "alt": "Kalhara Concepts PVT LTD",
+      "title": "Kalhara Concepts PVT LTD",
+      "description": "Developed a portfolio website for Kalhara Concepts PVT LTD, a startup construction company.",
+      "link": "https://www.kalharaconcepts.com/",
+      "readMoreLink": "#offcanvaskalharaconcepts"
+    },
+    {
+      "image": "./images/allinoneshoppe.png",
+      "alt": "All In One Shoppe",
+      "title": "All In One Shoppe",
+      "description": "Developed an e-commerce website for All In One Shoppe, a retail business.",
+      "link": "https://www.allinoneshoppe.com/shop/",
+      "readMoreLink": "#offcanvasallinoneshoppe"
+    },
+    {
+      "image": "./images/athma-min.png",
+      "alt": "Athma23 Website",
+      "title": "Athma23 Website",
+      "description": "Collaborated in the development of my college's tech fest website.",
+      "link": "https://athma23.netlify.app/",
+      "readMoreLink": "#offcanvasathma23"
+    }
+  ]
+  
