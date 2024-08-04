@@ -551,20 +551,13 @@
         <br />
         <br />
         <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner" style="min-height: 500px;">
+          <div class="carousel-inner" style="min-height: 450px;">
             <!-- Carousel items will be dynamically added here -->
           </div>
           <ol class="carousel-indicators">
             <!-- Indicators will be dynamically added here -->
           </ol>
-          <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          
         </div>
         <br />
         <div class="mt-3 d-flex justify-content-center">
@@ -578,82 +571,82 @@
       
       
       <script>
-document.addEventListener("DOMContentLoaded", function () {
-  fetch("portfolio.json")
-    .then((response) => response.json())
-    .then((data) => {
-      const carouselInner = document.querySelector(".carousel-inner");
-      const carouselIndicators = document.querySelector(".carousel-indicators");
+        document.addEventListener("DOMContentLoaded", function () {
+          fetch("portfolio.json")
+            .then((response) => response.json())
+            .then((data) => {
+              const carouselInner = document.querySelector(".carousel-inner");
+              const carouselIndicators = document.querySelector(".carousel-indicators");
 
-      data.forEach((item, index) => {
-        // Create carousel item
-        const carouselItem = document.createElement("div");
-        carouselItem.className = "carousel-item";
-        if (index === 0) {
-          carouselItem.classList.add("active");
-        }
+              data.forEach((item, index) => {
+                // Create carousel item
+                const carouselItem = document.createElement("div");
+                carouselItem.className = "carousel-item";
+                if (index === 0) {
+                  carouselItem.classList.add("active");
+                }
 
-        const colDiv = document.createElement("div");
-        colDiv.className = "col-md-4 col-sm-6 mx-auto";
+                const colDiv = document.createElement("div");
+                colDiv.className = "col-md-4 col-sm-6 mx-auto";
 
-        const cardDiv = document.createElement("div");
-        cardDiv.className = "card my-3 mx-auto pcardstyle";
+                const cardDiv = document.createElement("div");
+                cardDiv.className = "card my-3 mx-auto pcardstyle";
 
-        const link = document.createElement("a");
-        link.href = item.link;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
+                const link = document.createElement("a");
+                link.href = item.link;
+                link.target = "_blank";
+                link.rel = "noopener noreferrer";
 
-        const img = document.createElement("img");
-        img.src = item.image;
-        img.alt = item.alt;
-        img.className = "card-img-top";
+                const img = document.createElement("img");
+                img.src = item.image;
+                img.alt = item.alt;
+                img.className = "card-img-top";
 
-        link.appendChild(img);
+                link.appendChild(img);
 
-        const cardBody = document.createElement("div");
-        cardBody.className = "card-body px-0";
+                const cardBody = document.createElement("div");
+                cardBody.className = "card-body px-0";
 
-        const cardTitle = document.createElement("h3");
-        cardTitle.className = "card-title my-2 h3 fw-bold greytext";
-        cardTitle.textContent = item.title;
+                const cardTitle = document.createElement("h3");
+                cardTitle.className = "card-title my-2 h3 fw-bold greytext";
+                cardTitle.textContent = item.title;
 
-        const cardText = document.createElement("p");
-        cardText.className = "card-text";
-        cardText.textContent = item.description;
+                const cardText = document.createElement("p");
+                cardText.className = "card-text";
+                cardText.textContent = item.description;
 
-        const readMoreLink = document.createElement("a");
-        readMoreLink.className = "plinks d-block py-3";
-        readMoreLink.dataset.bsToggle = "offcanvas";
-        readMoreLink.href = item.readMoreLink;
-        readMoreLink.role = "button";
-        readMoreLink.ariaControls = "offcanvasExample";
-        readMoreLink.innerHTML = 'Read More <i class="fa-solid fa-arrow-right-long"></i>';
+                const readMoreLink = document.createElement("a");
+                readMoreLink.className = "plinks d-block py-3";
+                readMoreLink.dataset.bsToggle = "offcanvas";
+                readMoreLink.href = item.readMoreLink;
+                readMoreLink.role = "button";
+                readMoreLink.ariaControls = "offcanvasExample";
+                readMoreLink.innerHTML = 'Read More <i class="fa-solid fa-arrow-right-long"></i>';
 
-        cardBody.appendChild(cardTitle);
-        cardBody.appendChild(cardText);
-        cardBody.appendChild(readMoreLink);
+                cardBody.appendChild(cardTitle);
+                cardBody.appendChild(cardText);
+                cardBody.appendChild(readMoreLink);
 
-        cardDiv.appendChild(link);
-        cardDiv.appendChild(cardBody);
+                cardDiv.appendChild(link);
+                cardDiv.appendChild(cardBody);
 
-        colDiv.appendChild(cardDiv);
-        carouselItem.appendChild(colDiv);
+                colDiv.appendChild(cardDiv);
+                carouselItem.appendChild(colDiv);
 
-        carouselInner.appendChild(carouselItem);
+                carouselInner.appendChild(carouselItem);
 
-        // Create indicator
-        const indicator = document.createElement("li");
-        indicator.setAttribute("data-bs-target", "#portfolioCarousel");
-        indicator.setAttribute("data-bs-slide-to", index);
-        if (index === 0) {
-          indicator.classList.add("active");
-        }
-        carouselIndicators.appendChild(indicator);
-      });
-    })
-    .catch((error) => console.error("Error fetching the portfolio data:", error));
-});
+                // Create indicator
+                const indicator = document.createElement("li");
+                indicator.setAttribute("data-bs-target", "#portfolioCarousel");
+                indicator.setAttribute("data-bs-slide-to", index);
+                if (index === 0) {
+                  indicator.classList.add("active");
+                }
+                carouselIndicators.appendChild(indicator);
+              });
+            })
+            .catch((error) => console.error("Error fetching the portfolio data:", error));
+        });
 
       </script>
 
