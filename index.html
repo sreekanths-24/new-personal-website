@@ -284,44 +284,13 @@
       </svg>
       <!--==         Education section         ==-->
       <section id="education" class="my-education pt-5 px-3">
-        <h2 class="main-heading mt-2 display-5">Education</h2>
-        <div class=" p-2">
-          <div class="blog-card" style="max-width: 800px">
-            <div class="meta">
-              <div
-                class="photo"
-                style="background-image: url(./images/bhavans.jpeg)"
-              ></div>
-            </div>
-            <div class="description">
-              <h1>Bharatiya Vidya Bhavan, Chevayur</h1>
-              <h2>High School</h2>
-              <p class="card-text mt-2" style="text-align: left">
-                Bio Maths | Central Board of Secondary Education| 2018-2020
-                <br />
-                Grade - 82.8%
-              </p>
-            </div>
-          </div>
-          <div class="blog-card alt" style="max-width: 800px">
-            <div class="meta">
-              <div
-                class="photo"
-                style="background-image: url(./images/awh2.jpeg)"
-              ></div>
-            </div>
-            <div class="description">
-              <h1>AWH Engineering College, Kuttikkattoor</h1>
-              <h2>UG</h2>
-              <p>
-                BTech in CSE | APJ Abdul Kalam Technological University (KTU) |
-                2020-2024 <br />
-                CGPA - 8.19
-              </p>
-            </div>
-          </div>
+        <h2 class="main-heading display-5">My Education</h2>
+        <br />
+        <br />
+        <div class="px-md-5 d-flex flex-wrap justify-content-center">
+          <!-- Education cards will be dynamically added here -->
         </div>
-
+        <br />
         <div class="mt-3 d-flex justify-content-center">
           <a
             class="know-more-btn"
@@ -333,90 +302,145 @@
             My Certificates
           </a>
         </div>
-<br><br> 
+        <br><br> 
         <div
-          class="offcanvas offcanvas-start darkbackground"
-          tabindex="-1"
-          id="offcanvasEdu"
-          aria-labelledby="offcanvasExampleLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title h3 fw-bold" id="offcanvasExampleLabel">
-              My Certificates
-            </h5>
-            <button
-              type="button"
-              class="btn-close bluebackground"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <h3 class="h5">
-              Here are some of the Certificates I have earned for participating
-              in various events.
-            </h3>
-            <div>
-              <img src="./images/PDSA.jpg" class="img-fluid py-2" alt="c11" />
-              <img
-                src="./images/certificates/c6.jpg"
-                class="img-fluid py-2"
-                alt="c6"
-              />
-              <img
-                src="./images/certificates/c1.jpg"
-                class="img-fluid py-2"
-                alt="c1"
-              />
-              <img
-                src="./images/certificates/c2.jpg"
-                class="img-fluid py-2"
-                alt="c2"
-              />
-              <img
-                src="./images/certificates/c3.jpg"
-                class="img-fluid py-2"
-                alt="c3"
-              />
-              <img
-                src="./images/certificates/c4.jpg"
-                class="img-fluid py-2"
-                alt="c4"
-              />
-              <img
-                src="./images/certificates/c5.jpg"
-                class="img-fluid py-2"
-                alt="c5"
-              />
-              <img
-                src="./images/certificates/c7.png"
-                class="img-fluid py-2"
-                alt="c7.png"
-              />
-              <img
-                src="./images/certificates/c8.jpg"
-                class="img-fluid py-2"
-                alt="c8"
-              />
-              <img
-                src="./images/certificates/c9.jpg"
-                class="img-fluid py-2"
-                alt="c9.jpg"
-              />
-              <img
-                src="./images/envicertificate.jpg"
-                class="img-fluid py-2"
-                alt="c10.jpg"
-              />
-              <img
-                src="./images/certificates/c10.jpg"
-                class="img-fluid py-2"
-                alt="c10.jpg"
-              />
-            </div>
-          </div>
+        class="offcanvas offcanvas-start darkbackground"
+        tabindex="-1"
+        id="offcanvasEdu"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title h3 fw-bold" id="offcanvasExampleLabel">
+            My Certificates
+          </h5>
+          <button
+            type="button"
+            class="btn-close bluebackground"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
         </div>
+        <div class="offcanvas-body">
+          <h3 class="h5">
+            Here are some of the Certificates I have earned for participating
+            in various events.
+          </h3>
+          <div id="certificatesContainer">
+            <!-- Certificates will be dynamically added here -->
+          </div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              fetch("certificates.json")
+                .then((response) => response.json())
+                .then((data) => {
+                  const certificatesContainer = document.getElementById("certificatesContainer");
+        
+                  data.forEach((certificate) => {
+                    const img = document.createElement("img");
+                    img.src = certificate.src;
+                    img.alt = certificate.alt;
+                    img.className = "img-fluid py-2";
+        
+                    certificatesContainer.appendChild(img);
+                  });
+                })
+                .catch((error) => console.error("Error fetching the certificates data:", error));
+            });
+          </script>
+        </div>
+      </div>
+      
       </section>
+      
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          fetch("education.json")
+            .then((response) => response.json())
+            .then((data) => {
+              const educationContainer = document.querySelector("#education .px-md-5");
+      
+              data.forEach((edu) => {
+                const eduCard = document.createElement("div");
+                eduCard.className = "card edu-card m-2";
+      
+                const img = document.createElement("img");
+                img.src = edu.image;
+                img.alt = edu.title;
+                img.className = "card-img-top";
+      
+                const cardBody = document.createElement("div");
+                cardBody.className = "card-body";
+      
+                const cardTitle = document.createElement("h5");
+                cardTitle.className = "card-title";
+                cardTitle.textContent = edu.title;
+      
+                const cardText = document.createElement("p");
+                cardText.className = "card-text";
+                cardText.textContent = edu.description;
+      
+                cardBody.appendChild(cardTitle);
+                cardBody.appendChild(cardText);
+                eduCard.appendChild(img);
+                eduCard.appendChild(cardBody);
+      
+                educationContainer.appendChild(eduCard);
+              });
+            })
+            .catch((error) =>
+              console.error("Error fetching the education data:", error)
+            );
+        });
+      </script>
+      
+      <style>
+        /* Education Section */
+        .edu-card {
+          width: 400px;
+          background-color: #111111;
+          border-radius: 10px;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        @media screen and (max-width: 500px) {
+          .edu-card {
+            width: 90%;
+            flex: 1 1 calc(100% - 1rem);
+            margin: 0.5rem;
+          }
+        }
+        .edu-card:hover {
+          transform: scale(1.05);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .edu-card .card-img-top {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          background-color: #fff;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+          transition: transform 0.3s ease;
+        }
+        .edu-card:hover .card-img-top {
+          transform: perspective(500px) rotateY(10deg) rotateX(10deg);
+        }
+        .edu-card .card-body {
+          padding: 10px;
+          text-align: center;
+        }
+        .edu-card .card-title {
+          color: #00adb5;
+          font-size: 1.25rem;
+          margin-top: 10px;
+          font-weight: bold;
+        }
+        .edu-card .card-text {
+          color: #ffffff;
+          font-size: 1rem;
+        }
+      </style>
+        
 
       <svg
         class="separator"
@@ -441,6 +465,7 @@
       <section id="skills" class="my-skills pt-5 px-3">
         <h2 class="main-heading display-5">My Skills</h2>
         <br />
+        <br />
         <div class="px-md-5 d-flex flex-wrap justify-content-center">
           <!-- Skill cards will be dynamically added here -->
         </div>
@@ -461,7 +486,7 @@
           fetch("skills.json")
             .then((response) => response.json())
             .then((data) => {
-              const skillsContainer = document.querySelector(".px-md-5");
+              const skillsContainer = document.querySelector("#skills .px-md-5");
       
               data.forEach((skill) => {
                 const skillCard = document.createElement("div");
@@ -687,7 +712,7 @@
         <br />
         <section class="gradient-custom-5">
           <div class="container py-5">
-            <div class="main-timeline-5">
+            <div class="main-timeline-5" style="max-width: 700px;">
               <!-- Experience cards will be dynamically added here -->
             </div>
           </div>
