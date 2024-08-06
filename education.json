@@ -2,11 +2,11 @@
     {
         "image": "./images/bhavans.jpeg",
         "title": "Bharatiya Vidya Bhavan, Chevayur | High School",
-        "description": "Bio Maths | CBSE | 2018-2020 | Grade - 82.8%"
+        "description": "Bio Maths | Grade - 82.8%"
     },
     {
         "image": "./images/awh2.jpeg",
         "title": "AWH Engineering College, Kuttikkattoor | UG",
-        "description": "BTech in CSE | APJ Abdul Kalam Technological University (KTU) | 2020-2024 | CGPA - 8.19"
+        "description": "BTech in CSE | CGPA - 8.19"
     }
 ]
