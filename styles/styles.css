@@ -41,7 +41,6 @@ nav {
 }
 #myBtn i,
 .bluetext,
-.know-more-btn i,
 .plinks i,
 .quick-nav-links li:hover a,
 .quick-nav-links li:hover i {
@@ -328,12 +327,16 @@ p {
 }
 .know-more-btn {
   padding: 0.5em 1em;
-  font-size: 1.4rem;
-  color: #00adb5;
-  border: 2px solid currentColor;
+  font-size: 1.2rem;
+  color: #111;
+  background-image: linear-gradient(45deg, #00adb5, #00696f);
   width: max-content;
-  background-color: transparent;
   transition: 1s;
+  font-weight: 700;
+  border-radius: 10px;
+}
+.know-more-btn i{
+  color: #111;
 }
 .know-more-btn:focus i,
 .know-more-btn:hover i {
@@ -342,11 +345,8 @@ p {
 }
 .know-more-btn:focus,
 .know-more-btn:hover {
-  background-color: #00adb5;
-  color: #111;
-  border: 2px solid #00adb5;
+  
   transform: scale(1.2);
-  font-weight: 700;
   transition: 0.25s;
 }
 .waves::after,
