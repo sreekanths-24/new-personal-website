@@ -3,8 +3,11 @@ p {
   font-size: 1rem;
 }
 .my-services .card p,
-p {
-  text-indent: 1em;
+p, h1, h2, h3, h4, textarea {
+ line-height: 1.5;
+}
+h5{
+  line-height: 1.3;
 }
 #myBtn,
 .headerbar {
@@ -55,7 +58,7 @@ a {
 }
 p {
   line-height: 1.5;
-  text-align: justify;
+  /* text-align: justify; */
 }
 .dflexjbetween {
   display: flex;
@@ -325,29 +328,39 @@ p {
     font-size: 2rem;
   }
 }
+/*==================Button section======================*/
 .know-more-btn {
   padding: 0.5em 1em;
-  font-size: 1.5rem;
-  color: #111;
-  background-image: linear-gradient(45deg, #00adb5, #00696f);
+  font-size: 1.2rem;
+  color: #00adb5;
+  border: 3px solid currentColor;
+  border-radius: 5px;
   width: max-content;
-  transition: 1s;
-  font-weight: 700;
-  border-radius: 10px;
+  background-color: transparent;
+  transition: all 1s;
 }
-.know-more-btn i{
-  color: #111;
+.know-more-btn i {
+  color: #00adb5;
 }
-.know-more-btn:focus i,
-.know-more-btn:hover i {
-  color: #111;
-  transition: 0.25s;
+.know-more-btn:hover i,
+.know-more-btn:focus i {
+  color: #111111;
+  transition: all 0.25s;
 }
-.know-more-btn:focus,
-.know-more-btn:hover {
-  
+.know-more-btn:hover,
+.know-more-btn:focus {
+  background-color: #00adb5;
+  color: #111111;
+  border: 2px solid #00adb5;
   transform: scale(1.2);
-  transition: 0.25s;
+  font-weight: bold;
+  transition: all 0.25s;
+}
+.know-more-btn-small {
+  font-size: 1rem;
+}
+footer .know-more-btn-small {
+  font-size: 1.2rem;
 }
 .waves::after,
 .waves::before {
