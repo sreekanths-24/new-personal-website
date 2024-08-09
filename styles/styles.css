@@ -333,7 +333,7 @@ p {
   padding: 0.5em 1em;
   font-size: 1.2rem;
   color: #00adb5;
-  border: 3px solid currentColor;
+  border: 2px solid currentColor;
   border-radius: 5px;
   width: max-content;
   background-color: transparent;
