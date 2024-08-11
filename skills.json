@@ -20,6 +20,10 @@
       "title": "Markdown"
     },
     {
+      "image": "./images/skills/netlify.png",
+      "title": "Netlify"
+    },
+    {
       "image": "./images/skills/git-vcs.png",
       "title": "Git"
     },
@@ -36,12 +40,12 @@
       "title": "PHP"
     },
     {
-      "image": "./images/skills/sql.png",
-      "title": "SQL"
-    },
-    {
       "image": "./images/skills/codeignitor.png",
       "title": "CodeIgniter"
+    },
+    {
+      "image": "./images/skills/sql.png",
+      "title": "SQL"
     },
     
     {
@@ -60,11 +64,8 @@
     {
       "image": "./images/skills/vscode.png",
       "title": "VS Code"
-    },
-    {
-      "image": "./images/skills/netlify.png",
-      "title": "Netlify"
     }
+    
 
     
   ]

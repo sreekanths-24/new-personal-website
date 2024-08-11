@@ -526,98 +526,102 @@
       </g>
     </svg>
 
-      <section id="skills" class="my-skills pt-5 px-3">
-        <h2 class="main-heading display-5">Skills</h2>
-        <br />
-        <br />
-        <div class="px-md-5 hidden d-flex flex-wrap justify-content-center">
-          <!-- Skill cards will be dynamically added here -->
-        </div>
-        <br />
-        <div class="mt-3 d-flex justify-content-center">
-          <a
-            href="https://twitter.com/IAmSreekanthS/"
-            class="know-more-btn"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Go To <i class="fa-brands fa-twitter"></i
-          ></a>
-        </div>
-      </section>
-      
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          fetch("skills.json")
-            .then((response) => response.json())
-            .then((data) => {
-              const skillsContainer = document.querySelector("#skills .px-md-5");
-      
-              data.forEach((skill) => {
-                const skillCard = document.createElement("div");
-                skillCard.className = "card skill-card m-2";
-      
-                const img = document.createElement("img");
-                img.src = skill.image;
-                img.alt = skill.title;
-                img.className = "card-img-top";
-      
-      
-                skillCard.appendChild(img);
-      
-                skillsContainer.appendChild(skillCard);
-              });
-            })
-            .catch((error) =>
-              console.error("Error fetching the skills data:", error)
-            );
-        });
-      </script>
-      
-      <style>
-        /* Skills Section */
+    <section id="skills" class="my-skills pt-5 px-3">
+      <h2 class="main-heading display-5">Skills</h2>
+      <br />
+      <br />
+      <div class="px-md-5 hidden d-flex flex-wrap justify-content-center">
+        <!-- Skill cards will be dynamically added here -->
+      </div>
+      <br />
+      <div class="mt-3 d-flex justify-content-center">
+        <a
+          href="https://twitter.com/IAmSreekanthS/"
+          class="know-more-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Go To <i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </section>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("skills.json")
+          .then((response) => response.json())
+          .then((data) => {
+            const skillsContainer = document.querySelector("#skills .px-md-5");
+    
+            data.forEach((skill) => {
+              const skillCard = document.createElement("div");
+              skillCard.className = "card skill-card m-2";
+              skillCard.setAttribute("data-bs-toggle", "tooltip");
+              skillCard.setAttribute("data-bs-placement", "top");
+              skillCard.setAttribute("title", skill.title);
+    
+              const img = document.createElement("img");
+              img.src = skill.image;
+              img.alt = skill.title;
+              img.className = "card-img-top";
+    
+              skillCard.appendChild(img);
+              skillsContainer.appendChild(skillCard);
+            });
+    
+            // Initialize Bootstrap tooltips
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+            tooltipTriggerList.forEach(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+          })
+          .catch((error) =>
+            console.error("Error fetching the skills data:", error)
+          );
+      });
+    </script>
+    
+    <style>
+      /* Skills Section */
+      .skill-card {
+        width: 100px;
+        background-color: #111111;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      @media screen and (max-width: 500px) {
         .skill-card {
-          width: 100px;
-          background-color: #111111;
-          border-radius: 10px;
-          transition: all 0.3s ease;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          max-width: 80px;
+          flex: 1 1 calc(33.333% - 1rem);
+          margin: 0.5rem;
         }
-        @media screen and (max-width: 500px) {
-          .skill-card {
-            max-width: 80px;
-            flex: 1 1 calc(33.333% - 1rem);
-            margin: 0.5rem;
-          }
-        }
-        .skill-card:hover {
-          transform: scale(1.05);
-          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-        .skill-card .card-img-top {
-          width: 100%;
-          height: 80px;
-          object-fit: contain;
-          padding: 10px;
-          background-color: #fff;
-          border-radius: 10px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-          transition: transform 0.3s ease;
-        }
-        .skill-card:hover .card-img-top {
-          transform: perspective(500px) rotateY(10deg) rotateX(10deg);
-        }
-        .skill-card .card-body {
-          padding: 10px;
-          text-align: center;
-        }
-        .skill-card .card-title {
-          color: #00adb5;
-          font-size: 0.65rem;
-          margin-top: 10px;
-          font-weight: bold;
-        }
-      </style>
-      
+      }
+      .skill-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      .skill-card .card-img-top {
+        width: 100%;
+        height: 80px;
+        object-fit: contain;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+      }
+      .skill-card:hover .card-img-top {
+        transform: perspective(500px) rotateY(10deg) rotateX(10deg);
+      }
+      .skill-card .card-body {
+        padding: 10px;
+        text-align: center;
+      }
+      .skill-card .card-title {
+        color: #00adb5;
+        font-size: 0.65rem;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+    </style>
+    
       <svg
       class="separator darkbackground"
       xmlns="http://www.w3.org/2000/svg"
