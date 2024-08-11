@@ -1032,14 +1032,21 @@
         </div>
         <div class="py-3 darkbackground">
           <p class="text-center">
-            Made with<i
+            Made with <i
               class="fa-solid fa-heart hovereffect bluetext"
-              style="margin-left: -14px"
-            ></i>
+            ></i> 
             by Sreekanth S
-            <small class="small">© 2023</small>
+            <small id="current-year" class="small"></small>
           </p>
         </div>
+        <script>
+          // scripts.js
+          document.addEventListener('DOMContentLoaded', () => {
+            const currentYear = new Date().getFullYear();
+            document.getElementById('current-year').textContent = `© ${currentYear}`;
+          });
+
+        </script>
       </footer>
 
       <!--=============================================================================================================================================================================================================================================-->
