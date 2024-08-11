@@ -81,6 +81,76 @@
       })();
     </script>
 
+    <!-- google translate -->
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'en', // Replace 'en' with your default language
+          includedLanguages: 'hi,kn,ml,ta,te,pa,gu,or,bn',
+          autoDisplay: false, // Disable automatic translation
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE // Use the simple layout for the dropdown
+        }, 'google_translate_element');
+      }
+
+      // Function to hide the Google Translate toolbar
+      function hideGoogleTranslateToolbar() {
+        var frame = document.querySelector('.goog-te-banner-frame');
+        if (frame) {
+          frame.style.display = 'none';
+        }
+      }
+
+      // Hide the toolbar after the page loads
+      window.addEventListener('load', function() {
+        setTimeout(hideGoogleTranslateToolbar, 2000); // Adjust the timeout as needed
+      });
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <style>
+      /* Ensure the container for Google Translate is positioned fixed at the bottom */
+      .goog-te-banner-frame {
+        position: fixed !important;
+        bottom: 0 !important;
+        left: 0;
+        width: 100%;
+        z-index: 9999; /* Make sure it is on top of other content */
+        background-color: #f7f7f7; /* Light background color */
+        border-top: 1px solid #ddd; /* Subtle border at the top */
+        box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+      }
+    
+      /* Style the dropdown for better visibility */
+      .goog-te-combo {
+        background-color: #ffffff; /* White background */
+        border: 1px solid #ccc; /* Light border */
+        border-radius: 4px; /* Rounded corners */
+        padding: 5px 10px; /* Padding inside the dropdown */
+        font-size: 14px; /* Font size */
+        color: #333; /* Text color */
+      }
+    
+      /* Style the "Powered by Google" text */
+      .goog-te-banner-frame .goog-te-gadget {
+        display: none !important; /* Hide the default "Powered by Google" text */
+      }
+    
+      /* Hide the default toolbar using JavaScript */
+      .goog-te-banner-frame.skiptranslate {
+        display: none !important;
+      }
+    
+      #google_translate_element {
+        display: block; /* Ensure the widget is visible */
+      }
+    
+    
+      /* Add a hover effect to the dropdown */
+      .goog-te-combo:hover {
+        border-color: #007bff; /* Change border color on hover */
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow effect on hover */
+      }
+    </style>
+    
     <title>Sreekanth S | Personal Website</title>
   </head>
   <body>
@@ -136,8 +206,9 @@
         <li>
           <a href="#contact-me"><i class="fa-solid fa-phone"></i> HIRE ME</a>
         </li>
-      </ul>
+      <div id="google_translate_element"></div>
 
+      </ul>
       <i id="togglenav" class="fa-solid fa-bars"></i>
 
       <div class="socials-nav">
